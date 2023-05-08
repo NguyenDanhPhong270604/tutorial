@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Laptop Chuột & Bàn Phím</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+        <script src="https://kit.fontawesome.com/f726daf95a.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <!-- header -->
+            <!-- header -->
+        <header>
+            <nav>
+                <div class="box-menu">
+                    <h4 class="logo"><img src="./banner/logoo.png" alt=""></h4>
+                    <ul>
+                        
+                        <li class="active" ><a href="./index.html"><i class="fa fa-home"aria-hidden="true"></i> Trang chủ</a></li>    
+                        <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Sản Phẩm <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="box-submenu">
+                                <ul>
+                                    <li class="submenu-hover"><a href=""> LapTop </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="box-submenu-2">
+                                            <ul>
+                                                <li><a href="./LaptopGaming.html">LapTop Gaming</a></li>
+                                                <li><a href="./laptophoctap.html">LapTop Học Tập & Văn Phòng</a></li>
+                                                <li><a href="./laptopdohoa.html">LapTop Đồ Họa</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-hover"><a href="">Phụ kiện </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="box-submenu-3">
+                                            <ul>
+                                                <li><a href="./laptop ban phim.html">Bàn phím & Chuột</a></li>
+                                                <li><a href="./loa.html">Loa</a></li>
+                                                <li><a href="./tai nghe.html">Tai Nghe</a></li>
+                                                <li><a href="./USB.html">USB</a></li>
+                                                <li><a href="./phanmem.html">Phần Mềm</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="./maytinhpc.html">Màn Hình Máy Tính Pc</a></li>
+                                    <li><a href="./dongho.html">Đồng Hồ Cao Cấp</a></li>
+                                    <li><a href="">Sạc Dự Phòng</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-clone" aria-hidden="true"></i> Giới thiệu <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="box-submenu">
+                                <ul>
+                                    <li class="submenu-hover"><a href="./laptop Macbook.html">LapTop Macbook</a></li>
+                                    <li class="submenu-hover"><a href="./Laptop Acer.html">LapTop Acer</a></li>                                           
+                                    <li class="submenu-hover"><a href="./Laptop Asus.html">LapTop Asus</a></li>                                          
+                                    <li class="submenu-hover"><a href="./lapropDell.html">LapTop Dell</a></li>
+                                    <li class="submenu-hover"><a href="./Laptop Lenovo .html">LapTop Lenovo</a></li>
+                                    <li class="submenu-hover"><a href="./laptop Hp.html">LapTop Hp</a></li>
+                                    <li class="submenu-hover"><a href="./laptop msi.html">LapTop Msi</a></li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <!-- cart -->
+                        <button id="cart">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i> Giỏ Hàng </button>
+                    </ul>
+                </div>
+                <!-- cart -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản
+                                    Phẩm</span>
+                                <span class="cart-price cart-header
+                                    cart-column">Giá</span>
+                                <span class="cart-quantity cart-header
+                                    cart-column">Số Lượng</span>
+                            </div>
+                            <div class="cart-items">
+
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="row">Thông Tin Đơn Hàng</div>
+                            <div class="row-b mb-3">
+                                <div class="col-md-6">
+                                    <label>Họ tên của quý khách</label><br>
+                                    <input  type="text" name="hoten">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Email của quý khách</label><br>
+                                    <input  type="text" name="email" type="email" >
+                                </div>
+                            </div>
+                            <div class="row-b mb-3">
+                                <div class="col-md-6">
+                                    <label>Địa chỉ giao hàng</label><br>
+                                    <input type="text" name="diachi" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Điện thoại</label><br>
+                                    <input  type="text" name="dienthoai" >
+                                </div>
+                            </div>
+                        </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- form search -->
+        <div class="search-form" id="frm-search" name="search" action="/tim">
+            <form>
+                <button type="button" id="sbutton"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <input type="text" placeholder="Bạn muốn tìm sản phẩm gì?" >
+            </form>
+        </div>
+        
+        <!-- banner -->
+        <section class="row banner padd20">
+            <div class="container">
+                <div class="left mr">
+                    <img src="./img chuột & bàn phím/Chuột gaimh.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="banner1 mb20">
+                        <img src="./banner/giao hàng.png" alt="">
+                    </div>
+                    <div class="banner2">
+                        <img src="./banner/cảm ơn khách hàng.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Sản Phẩm -->
+        <section class="wrapper">
+            <div class="products">
+                <ul>
+                    <div class="banner-1">
+                        <div class="title-banner">
+                            <img  src="./img chuột & bàn phím/banner.chuot.png" alt="">
+                        </div>
+                    </div>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/1-removebg-preview (1).png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Bàn Phím Cơ Có Dây Gaming Razer BlackWidow V3 </h3>
+                            <div class="utility">
+                                <p>Tương thích: Windows</p>
+                                <p>Cách kết nối: Dây cắm USB</p>
+                                <p>Đèn LED: RGB</p>
+                                <p>Số phím: 104 phím</p>
+                                <p>Độ dài dây: 1.96 m</p>
+                                <p>Hãng: Razer</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">3640000đ</span>
+                                    <span class="sale">-20%</span>
+                                    <span class="money">2.910.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/2-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Bàn Phím Cơ Có Dây Gaming Razer Huntsman Tournament Edition </h3>
+                            <div class="utility">
+                                <p>Tương thích: Windows</p>
+                                <p>Cách kết nối: Type-C</p>
+                                <p>Đèn LED: RGB</p>
+                                <p>Số phím: 87 phím</p>
+                                <p>Độ dài dây: 2.01 m</p>
+                                <p>Hãng: Razer</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">3550000đ</span>
+                                    <span class="sale">-20%</span>
+                                    <span class="money">2.840.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/3-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Bàn Phím Cơ Có Dây Gaming Corsair K68 RGB Mechanical </h3>
+                            <div class="utility">
+                                <p>Tương thích: Windows</p>
+                                <p>Cách kết nối: Dây cắm USB</p>
+                                <p>Đèn LED: RGB</p>
+                                <p>Số phím: 104 phím</p>
+                                <p>Độ dài dây: 2.22m</p>
+                                <p>Hãng: Corsair</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">3100000đ</span>
+                                    <span class="sale">-20%</span>
+                                    <span class="money">2.635.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/4-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Bàn Phím Cơ Có Dây Gaming Razer BlackWidow </h3>
+                            
+                            <div class="utility">
+                                <p>Tương thích: Windows</p>
+                                <p>Cách kết nối: Wired - Attached</p>
+                                <p>Đèn LED: RGB</p>
+                                <p>Số phím: 104 phím</p>
+                                <p>Độ dài dây: 1.97m</p>
+                                <p>Hãng: Razer</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">3200000₫</span>
+                                    <span class="sale">-20%</span>
+                                    <span class="money">2.560.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/5-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Bàn Phím Cơ Có Dây Gaming Corsair K63 Compact Mechanical </h3>
+                            <div class="utility">
+                                <p>Tương thích: Windows</p>
+                                <p>Cách kết nối: Dây cắm USB</p>
+                                <p>Đèn LED: Có</p>
+                                <p>Số phím: 87 phím</p>
+                                <p>Độ dài dây: 2.21 m</p>
+                                <p>Hãng: Corsair</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">2000000đ</span>
+                                    <span class="sale">-2%</span>
+                                    <span class="money">1.800.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/6-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Chuột Không dây Bluetooth Logitech MX Master 3 Đen</h3>
+                            <div class="utility">
+                                <p>Tương thích: macOS, Windows</p>
+                                <p>Độ phân giải: 4000 DPI</p>
+                                <p>Cách kết nối: USB , Bluetooth</p>
+                                <p>Độ dài dây: 10m</p>
+                                <p>Loại pin: Pin sạc</p>
+                                <p>Hãng: Logitech</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">340000đ</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">2.575.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/7-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Chuột Có dây Gaming Corsair Nightsword RGB Đen</h3>
+                            <div class="utility">
+                                <p>Tương thích: macOS, Android</p>
+                                <p>Độ phân giải: 18000 DPI</p>
+                                <p>Cách kết nối: Dây cắm USB</p>
+                                <p>Độ dài dây: Dây dài 187 cm</p>
+                                <p>Đèn LED: RGB 16.8 triệu màu</p>
+                                <p>Hãng: Corsair</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">2150000đ</span>
+                                    <span class="sale">-17%</span>
+                                    <span class="money">1.775.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/8-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Bàn Phím Không Dây Bluetooth Logitech K580 
+                                </h3>
+                            
+                            <div class="utility">
+                                <p>Tương thích: Windows, MacOS</p>
+                                <p>Cách kết nối: USB, Bluetooth</p>
+                                <p>Số phím: 101 phím</p>
+                                <p>Pin: 2 pin AAA</p>
+                                <p>Độ dài dây: 10m</p>
+                                <p>Hãng: Logitech</p>  
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">2000000₫</span>
+                                    <span class="sale">-23%</span>
+                                    <span class="money">1.495.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/9-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Chuột Có dây Gaming Razer DeathAdder V2 Đen</h3>
+                            <div class="utility">
+                                <p>Tương thích: macOS, Windows</p>
+                                <p>Độ phân giải: 20000 DPI</p>
+                                <p>Cách kết nối: USB</p>
+                                <p>Độ dài dây: 220 cm </p>
+                                <p>Đèn LED: RGB</p>
+                                <p>Hãng: Razer</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price"> 1650000đ</span>
+                                    <span class="sale">-20%</span>
+                                    <span class="money">1.320.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/10-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Chuột Có dây Gaming Asus Keris</h3>
+                            <div class="utility">
+                                <p>Tương thích: Windows</p>
+                                <p>Độ phân giải: 16000 DPI</p>
+                                <p>Cách kết nối: USB</p>
+                                <p>Độ dài dây: 204 cm</p>
+                                <p>Đèn LED: RGB</p>
+                                <p>Hãng: Asus</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">2040000đ</span>
+                                    <span class="sale">-15%</span>
+                                    <span class="money">1.250.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/11-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Chuột Không dây Bluetooth Gaming Asus TUF M4 WL</h3>
+                            <div class="utility">
+                                <p>Tương thích: Windows</p>
+                                <p>Độ phân giải: 12000 DPI</p>
+                                <p>Cách kết nối: USB, Bluetooth</p>
+                                <p>Độ dài dây: 15m</p>
+                                <p>Loại pin: 1 viên pin AA</p>
+                                <p>Hãng: Asus</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">2000000đ</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">1.190.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/12-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Bàn Phím Bluetooth DareU EK868</h3>
+                            
+                            <div class="utility">
+                                <p>Tương thích: Windows, MacOS</p>
+                                <p>Cách kết nối: Bluetooth, USB</p>
+                                <p>Đèn LED: Có</p>
+                                <p>Số phím: 68 Phím</p>
+                                <p>Độ dài dây: 8m</p>
+                                <p>Hãng: DareU</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">1990000₫</span>
+                                    <span class="sale">-8%</span>
+                                    <span class="money">1.170.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/13-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Bàn Phím Có Dây Gaming MSI Vigor GK30 US </h3>
+                            <div class="utility">
+                                <p>Tương thích: Windows</p>
+                                <p>Cách kết nối: Dây cắm USB</p>
+                                <p>Đèn LED: RGB</p>
+                                <p>Số phím: 104 phím</p>
+                                <p>Độ dài dây: 1.85 m</p>
+                                <p>Hãng: MSI</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">1000000đ</span>
+                                    <span class="sale">-3%</span>
+                                    <span class="money">970.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/14-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Bàn Phím Cơ Có Dây Gaming Rapoo V500 Pro Rainbow Backlit</h3>
+                            <div class="utility">
+                                <p>Tương thích: Windows</p>
+                                <p>Cách kết nối: Dây cắm USB</p>
+                                <p>Đèn LED: Có</p>
+                                <p>Số phím: 104 phím</p>
+                                <p>Độ dài dây: 1.82 m</p>
+                                <p>Hãng: Rapoo</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">9000000đ</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">800.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/15-removebg-preview (2).png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Bàn Phím Có Dây DareU EK87</h3>
+                            <div class="utility">
+                                <p>Tương thích: Windows, MacOS</p>
+                                <p>Cách kết nối: Dây cắm USB</p>
+                                <p>Đèn LED: Có</p>
+                                <p>Số phím: 87 phím</p>
+                                <p>Độ dài dây: 1.88 m</p>
+                                <p>Hãng: DareU</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">750000đ</span>
+                                    <span class="sale">-6%</span>
+                                    <span class="money">650.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/16-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Chuột Có dây Gaming Rapoo VT30 Đen</h3>
+                            <div class="utility">
+                                <p>Tương thích: macOS, Windows</p>
+                                <p>Độ phân giải: 6200 DPI</p>
+                                <p>Cách kết nối: USB</p>
+                                <p>Độ dài dây: 185 cm</p>
+                                <p>Đèn LED: RGB</p>
+                                <p>Hãng: Rapoo</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">790000₫</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">690.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/17-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Chuột Có dây Gaming Logitech G102 Gen2 Lightsync </h3>
+                            <div class="utility">
+                                <p>Tương thích: Windows</p>
+                                <p>Cách kết nối: USB</p>
+                                <p>Độ phân giải: 8000 DPI</p>
+                                <p>Độ dài dây: 209 cm </p>
+                                <p>Đèn LED: RGB 16.8 triệu màu</p>
+                                <p>Hãng: Logitech</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">800000đ</span>
+                                    <span class="sale">-12%</span>
+                                    <span class="money">600.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/18-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Chuột Có dây Gaming MSI Clutch GM08 Đen</h3>
+                            <div class="utility">
+                                <p>Tương thích: macOS, Windows</p>
+                                <p>Độ phân giải: 200 - 3200 DPI</p>
+                                <p>Cách kết nối: Dây cắm USB</p>
+                                <p>Đèn LED: Có</p>
+                                <p>Độ dài dây: 185 cm</p>
+                                <p>Hãng: MSI</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">500000đ</span>
+                                    <span class="sale">-5%</span>
+                                    <span class="money">450.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/19-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Chuột Có dây DareU EM908 Hồng </h3>
+                            <div class="utility">
+                                <p>Tương thích: Windows, macOS</p>
+                                <p>Độ phân giải: 6400 DPI</p>
+                                <p>Cách kết nối: Dây cắm USB</p>
+                                <p>Đèn LED: RGB</p>
+                                <p>Độ dài dây: 186 cm</p>
+                                <p>Hãng: DareU</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">620000đ</span>
+                                    <span class="sale">-15%</span>
+                                    <span class="money">420.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/20-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Chuột Không dây Bluetooth A4Tech FB35</h3>
+                            <div class="utility">
+                                <p>Tương thích: macOS, Windows</p>
+                                <p>Độ phân giải: 600/1000/1600 DPI</p>
+                                <p>Cách kết nối: USB</p>
+                                <p>Độ dài dây: 15 m</p>
+                                <p>Loại pin: 1 viên pin AA</p>
+                                <p>Hãng: A4Tech</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">400000₫</span>
+                                    <span class="sale">-1%</span>
+                                    <span class="money">390.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/21-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Tay Cầm Chơi Game Có Dây Rapoo V600 Đen</h3>
+                            <div class="utility">
+                                <p>Tương thích: Windows PS3</p>
+                                <p>Kết nối: USB</p>
+                                <p>Chiều dài dây: 206 cm</p>
+                                <p>Đèn LED: LED xanh dương</p>
+                                <p>Khối lượng: 273 g</p>
+                                <p>Hãng: Rapoo</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">990000đ</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">590.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/22-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Chuột Không dây A4Tech FG30</h3>
+                            <div class="utility">
+                                <p>Tương thích: Windows</p>
+                                <p>Độ phân giải: 600/1000/1600 DPI</p>
+                                <p>Cách kết nối: USB</p>
+                                <p>Độ dài dây: 15 m</p>
+                                <p>Loại pin: 1 viên pin AA</p>
+                                <p>Hãng: A4Tech</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">350000đ</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">250.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/23-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Chuột Không dây Bluetooth Silent Rapoo M650 Đức </h3>
+                            <div class="utility">
+                                <p>Tương thích: macOS, Windows</p>
+                                <p>Độ phân giải: 1300 DPI</p>
+                                <p>Cách kết nối: USB</p>
+                                <p>Độ dài dây: 10 m</p>
+                                <p>Loại pin: 1 viên pin AA</p>
+                                <p>Hãng: Rapoo</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">300000đ</span>
+                                    <span class="sale">-15%</span>
+                                    <span class="money">450.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img chuột & bàn phím/24-removebg-preview.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Chuột Không dây Bluetooth Silent Rapoo M650 Argentina</h3>
+                            <div class="utility">
+                                <p>Tương thích: macOS, Windows</p>
+                                <p>Độ phân giải: 1300 DPI </p>
+                                <p>Cách kết nối: USB</p>
+                                <p>Độ dài dây: 10 m</p>
+                                <p>Loại pin: 1 viên pin AA</p>
+                                <p>Hãng: Rapoo</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">500000₫</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">400.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!----------------Hotline----------------->
+           <div class="hotline">
+            <div class="call call_zalo">
+                <div class="hotline-phone-ring">
+                    <div class="hotline-phone-ring-circle"></div>
+                    <div class="hotline-phone-ring-circle-fill"></div>
+                    <div class="hotline-phone-ring-img-circle"> 
+                        <a href="http://zalo.me/0383684321" class="">
+                            <img src="https://fastcare.vn/assets/images/zalo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>       
+            <div class="call call_phone">
+                <div class="hotline-phone-ring">
+                    <div class="hotline-phone-ring-circle"></div>
+                    <div class="hotline-phone-ring-circle-fill"></div>
+                    <div class="hotline-phone-ring-img-circle"> 
+                        <a href="tel:0383684321" class="">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------Back-top----------------->
+        <div id="backtop">
+            <i class="fa-solid fa-chevron-up"></i>
+
+        </div>
+
+        <script src="script.js"></script>
+
+
+        
+        <!----------------footer----------------->
+        <footer class="footer">
+            <div class="footer-left">
+                <h3>Nguyễn Danh<span>Phóng</span></h3>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Văn Khê</span> Hà Đông</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>0383684321</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="">danhphong200412@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing
+                    elit. Fusce euismod convallis velit, eu auctor lacus
+                    vehicula sit amet.
+                </p>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100049137288608"><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-github"></i></a>
+
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+  $(window).scroll(function(){
+    if ($(this).scrollTop()) {
+      $('#backtop').fadeIn();
+    } else {
+      $('#backtop').fadeOut();
+    }
+  });
+  $("#backtop").click(function(){
+    $('html, body').animate({
+      scrollTop: 0 
+    }, 500);
+  });
+});
+    </script>
+</html>

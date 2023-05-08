@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Học Tập</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/f726daf95a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+                <!-- header -->
+        <header>
+            <nav>
+                <div class="box-menu">
+                    <h4 class="logo"><img src="./banner/logoo.png" alt=""></h4>
+                    <ul>
+                        
+                        <li class="active" ><a href="./index.html"><i class="fa fa-home"aria-hidden="true"></i> Trang chủ</a></li>    
+                        <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Sản Phẩm <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="box-submenu">
+                                <ul>
+                                    <li class="submenu-hover"><a href=""> LapTop </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="box-submenu-2">
+                                            <ul>
+                                                <li><a href="./LaptopGaming.html">LapTop Gaming</a></li>
+                                                <li><a href="./laptophoctap.html">LapTop Học Tập & Văn Phòng</a></li>
+                                                <li><a href="./laptopdohoa.html">LapTop Đồ Họa</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-hover"><a href="">Phụ kiện </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="box-submenu-3">
+                                            <ul>
+                                                <li><a href="./laptop ban phim.html">Bàn phím & Chuột</a></li>
+                                                <li><a href="./loa.html">Loa</a></li>
+                                                <li><a href="./tai nghe.html">Tai Nghe</a></li>
+                                                <li><a href="./USB.html">USB</a></li>
+                                                <li><a href="./phanmem.html">Phần Mềm</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="./maytinhpc.html">Màn Hình Máy Tính Pc</a></li>
+                                    <li><a href="./dongho.html">Đồng Hồ Cao Cấp</a></li>
+                                    <li><a href="">Sạc Dự Phòng</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-clone" aria-hidden="true"></i> Giới thiệu <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="box-submenu">
+                                <ul>
+                                    <li class="submenu-hover"><a href="./laptop Macbook.html">LapTop Macbook</a></li>
+                                    <li class="submenu-hover"><a href="./Laptop Acer.html">LapTop Acer</a></li>                                           
+                                    <li class="submenu-hover"><a href="./Laptop Asus.html">LapTop Asus</a></li>                                          
+                                    <li class="submenu-hover"><a href="./lapropDell.html">LapTop Dell</a></li>
+                                    <li class="submenu-hover"><a href="./Laptop Lenovo .html">LapTop Lenovo</a></li>
+                                    <li class="submenu-hover"><a href="./laptop Hp.html">LapTop Hp</a></li>
+                                    <li class="submenu-hover"><a href="./laptop msi.html">LapTop Msi</a></li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <!-- cart -->
+                        <button id="cart">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i> Giỏ Hàng </button>
+                    </ul>
+                </div>
+                <!-- cart -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản
+                                    Phẩm</span>
+                                <span class="cart-price cart-header
+                                    cart-column">Giá</span>
+                                <span class="cart-quantity cart-header
+                                    cart-column">Số Lượng</span>
+                            </div>
+                            <div class="cart-items">
+
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="row">Thông Tin Đơn Hàng</div>
+                            <div class="row-b mb-3">
+                                <div class="col-md-6">
+                                    <label>Họ tên của quý khách</label><br>
+                                    <input  type="text" name="hoten">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Email của quý khách</label><br>
+                                    <input  type="text" name="email" type="email" >
+                                </div>
+                            </div>
+                            <div class="row-b mb-3">
+                                <div class="col-md-6">
+                                    <label>Địa chỉ giao hàng</label><br>
+                                    <input type="text" name="diachi" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Điện thoại</label><br>
+                                    <input  type="text" name="dienthoai" >
+                                </div>
+                            </div>
+                        </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- form search -->
+        <div class="search-form" id="frm-search" name="search" action="/tim">
+            <form>
+                <button type="button" id="sbutton"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <input type="text" placeholder="Bạn muốn tìm sản phẩm gì?" >
+            </form>
+        </div>
+        
+        <!-- banner -->
+        <section class="row banner padd20">
+            <div class="container">
+                <div class="left mr">
+                    <img src="./img học tập & văn phòng/banner văn phòng.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="banner1 mb20">
+                        <img src="./banner/giao hàng.png" alt="">
+                    </div>
+                    <div class="banner2">
+                        <img src="./banner/cảm ơn khách hàng.png    " alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!---------------------- --sản phẩm------------------->
+        <section class="wrapper">        
+            <div class="products">
+                <ul>
+                    <div class="banner-1">
+                        <div class="title-banner">
+                            <img src="https://cdn.tgdd.vn/2022/08/banner/banner-hoc-tap-desk-1-1200x200.png" alt="">
+                        </div> 
+                    </div>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/1.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Apple MacBook Air M1 2020 8GB/256GB/7-core GPU</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 256 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 13.3", Retina</p>  
+                                <p>CPU: Apple M1</p> 
+                                <p>Card: 7 nhân GPU</p> 
+                                <p>Pin: Khoảng 10 tiếng</p>
+                                <p>Khối lượng: 1.29 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="old-price">22990000₫</span>
+                                        <span class="sale">-19%</span>
+                                        <span class="money">18.790.000đ</span>      
+                                    </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/2.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Dell Vostro 3510 i5 1135G7/8GB/512GB/Win11 </h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>    
+                                <span>SSD 256 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD</p>  
+                                <p>CPU: i5, 1135G7, 2.4GHz</p> 
+                                <p>Card: MX350 2GB</p> 
+                                <p>Pin: 3-cell, 41Wh</p>
+                                <p>Khối lượng: 1.69 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">22990000₫</span>
+                                    <span class="sale">-23%</span>
+                                    <span class="money">17.690.000₫</span>      
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/3.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop HP 15s fq2716TU i3 1115G4/8GB/512GB/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD</p>  
+                                <p>CPU: i3, 1115G4, 3GHz</p> 
+                                <p>Card: Intel UHD</p> 
+                                <p>Pin: 3-cell, 41Wh</p>
+                                <p>Khối lượng: 1.7 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">13690000₫</span>
+                                    <span class="sale">-20%</span>
+                                    <span class="money">10.990.000₫</span> 
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/4.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop HP Envy 16 h0205TX i9 12900H/32GB/512GB/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 32GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 16", 4K</p>  
+                                <p>CPU: i9, 12900H, 2.5GHz</p> 
+                                <p>Card: RTX 3060 6GB</p> 
+                                <p>Pin: 6-cell Li-ion, 83 Wh</p>
+                                <p>Khối lượng: 2.32 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">65390000₫</span>
+                                    <span class="sale">-7%</span>
+                                    <span class="money">60.390.000đ</span> 
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/5.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop HP Elitebook Dragonfly G3 i7 Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>
+                                <span>SSD 1TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 13.5", Full HD</p>  
+                                <p>CPU: i7, 1255U, 1.7GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 6-cell Li-ion, 68 Wh</p>
+                                <p>Khối lượng: 0.99 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class = "old-price">52590000₫</span>
+                                        <span class="sale">-7%</span>
+                                        <span class="money">48.590.000đ</span>      
+                                    </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/6.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop LG gram 2022 i7 1260P/16GB/1TB/Win11 </h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>    
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 17", 2K</p>  
+                                <p>CPU: i7, 1260P, 2.1GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 80 Wh</p>
+                                <p>Khối lượng: 1.435 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">50990000₫</span>
+                                    <span class="sale">-15%</span>
+                                    <span class="money">42.990.000₫</span>      
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/7.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Surface Pro 9 i7/120Hz/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>
+                                <span>SSD 256 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 13", 2K, 120Hz</p>  
+                                <p>CPU: i7, 1255U, 1.7GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: Li-ion, 47.7 Wh</p>
+                                <p>Khối lượng: 0.879 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">44990000₫</span>
+                                    <span class="sale">-0%</span>
+                                    <span class="money">42.990.000₫</span> 
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/8.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Lenovo Yoga Duet 7 13ITL6 i7 1165G7/16GB/1TB/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>
+                                <span>SSD 1TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 13", 2K</p>  
+                                <p>CPU: i7, 1165G7, 2.8GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 41 Wh</p>
+                                <p>Khối lượng: 1.168 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">36490000₫ </span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">32.490.000đ</span> 
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/9.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Asus Zenbook 14 Flip OLED UP3404VA i7 /Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 14", 2K, 90Hz</p>  
+                                <p>CPU: i7, 1360P, 2.2GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 4-cell Li-ion, 75 Wh</p>
+                                <p>Khối lượng: 1.5 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class = "old-price">33990000₫</span>
+                                        <span class="sale">-0%</span>
+                                        <span class="money">32.990.000đ</span>      
+                                    </div>
+                               
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/10.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop MSI Summit E14 Flip Evo A12MT i7 /Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>    
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 14", 2K</p>  
+                                <p>CPU: i7, 1280P, 1.8GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 4-cell, 72Wh</p>
+                                <p>Khối lượng: 1.6 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">36990000₫</span>
+                                    <span class="sale">-13%</span>
+                                    <span class="money">31.990.000₫</span>      
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/11.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Dell Inspiron 16 5620 i7 /Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 16", Full HD</p>  
+                                <p>CPU: i7, 1255U, 1.7GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 4-cell, 54Wh</p>
+                                <p>Khối lượng: 1.97 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">28990000₫</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">26.990.000₫</span> 
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/12.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop MSI Gaming Cyborg 15 A12VE i7 RTX4050/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 144Hz</p>  
+                                <p>CPU: i7, 12650H, 2.30 GHz</p> 
+                                <p>Card: RTX 4050 6GB</p> 
+                                <p>Pin: 3-cell, 53.5Wh</p>
+                                <p>Khối lượng: 1.98 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">30490000₫ </span>
+                                    <span class="sale">-13%</span>
+                                    <span class="money">27.490.000đ</span> 
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/13.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Dell Inspiron 16 5620 i7/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD</p>  
+                                <p>CPU: i7, 1260P, 2.1GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 45Wh</p>
+                                <p>Khối lượng: 1.7 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class = "old-price">28690000₫</span>
+                                        <span class="sale">-8%</span>
+                                        <span class="money">26.190.000đ</span>      
+                                    </div>
+                                
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/14.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop HP Pavilion X360 14 ek0132TU i7 /Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>    
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 14", Full HD</p>  
+                                <p>CPU: i7, 1255U, 1.7GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 3-cell, 43Wh</p>
+                                <p>Khối lượng: 1.51 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">26990000₫</span>
+                                    <span class="sale">-6%</span>
+                                    <span class="money">25.290.000₫</span>      
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/15.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Asus ExpertBook B5402CB i5/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 14", Full HD</p>  
+                                <p>CPU: i5, 1240P, 1.7GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 3-cell, 63Wh</p>
+                                <p>Khối lượng: 1.25 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">26990000₫</span>
+                                    <span class="sale">-30%</span>
+                                    <span class="money">21.490.000₫</span> 
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/16.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Acer Swift 3 SF314 512 56QN i5/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 14", 2K</p>  
+                                <p>CPU: i5, 1240P, 1.7GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 3-cell, 56Wh</p>
+                                <p>Khối lượng: 1.2 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">23990000₫ </span>
+                                    <span class="sale">-23%</span>
+                                    <span class="money">18.290.000đ</span> 
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/17.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>  Laptop MSI Modern 14 B11MOU i7/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 14", Full HD</p>  
+                                <p>CPU: i7, 1195G7, 2.9GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 3-cell, 39Wh</p>
+                                <p>Khối lượng: 1.87 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <div class="price">
+                                        <span class = "old-price">19990000₫</span>
+                                        <span class="sale">-20%</span>
+                                        <span class="money">15.990.000đ</span>      
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/18.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop MSI Modern 14 /Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>    
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 14", Full HD</p>  
+                                <p>CPU: i7, 1195G7, 2.9GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 3-cell, 39Wh</p>
+                                <p>Khối lượng: 1.3 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">19990000₫</span>
+                                    <span class="sale">-21%</span>
+                                    <span class="money">15.990.000₫</span>      
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/19.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Acer Aspire 3 A315 58  i7/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD</p>  
+                                <p>CPU: i5, 1235U, 1.3GHz</p> 
+                                <p>Card: Intel UHD</p> 
+                                <p>Pin: 3-cell, 40Wh</p>
+                                <p>Khối lượng: 1.7 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">15990000₫</span>
+                                    <span class="sale">-9%</span>
+                                    <span class="money">14.490.000₫</span> 
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/20.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Acer Aspire 5 A514 54 511G i5 /Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 1TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 14", Full HD</p>  
+                                <p>CPU: i5, 1135G7, 2.4GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 48Wh</p>
+                                <p>Khối lượng: 1.46 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">19990000₫</span>
+                                    <span class="sale">-30%</span>
+                                    <span class="money">13.890.000đ</span> 
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/21.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Itel Spirit 2 i5 1155G7/8GB/512GB/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD</p>  
+                                <p>CPU: i5, 1155G7, 2.5GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 3-cell, 50Wh</p>
+                                <p>Khối lượng: 1.7 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class = "old-price">13490000₫</span>
+                                        <span class="sale">-0%</span>
+                                        <span class="money">12.990.000đ</span>      
+                                    </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/22.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Asus Vivobook 14 X1402ZA i3/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 4GB</span>    
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 14", Full HD</p>  
+                                <p>CPU: i3, 1220P, 1.1GHz</p> 
+                                <p>Card: Intel UHD</p> 
+                                <p>Pin: 3-cell, 42Wh</p>
+                                <p>Khối lượng: 1.5 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">13990000₫</span>
+                                    <span class="sale">-14%</span>
+                                    <span class="money">11.990.000₫</span>      
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/23.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Dell Inspiron 15 5515 R7/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD</p>  
+                                <p>CPU: Ryzen 7, 5700U, 1.8GHz</p> 
+                                <p>Card: Radeon</p> 
+                                <p>Pin: 4-cell, 54Wh</p>
+                                <p>Khối lượng: 1.75 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">22490000₫</span>
+                                    <span class="sale">-16%</span>
+                                    <span class="money">18.790.000₫</span> 
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img học tập & văn phòng/24.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span> Laptop Lenovo Yoga Slim 7 Pro i5/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>
+                                <span>SSD 1TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 14", 2K, 90Hz</p>  
+                                <p>CPU: i5, 11320H, 3.2GHz</p> 
+                                <p>Card: Intel Iris Xe</p> 
+                                <p>Pin: 61 Wh</p>
+                                <p>Khối lượng: 1.38 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class = "old-price">25990000₫</span>
+                                    <span class="sale">-11%</span>
+                                    <span class="money">22.990.000đ</span> 
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+    <!----------------Hotline----------------->
+    <div class="hotline">
+        <div class="call call_zalo">
+            <div class="hotline-phone-ring">
+                <div class="hotline-phone-ring-circle"></div>
+                <div class="hotline-phone-ring-circle-fill"></div>
+                <div class="hotline-phone-ring-img-circle"> 
+                    <a href="http://zalo.me/0383684321" class="">
+                        <img src="https://fastcare.vn/assets/images/zalo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>       
+        <div class="call call_phone">
+            <div class="hotline-phone-ring">
+                <div class="hotline-phone-ring-circle"></div>
+                <div class="hotline-phone-ring-circle-fill"></div>
+                <div class="hotline-phone-ring-img-circle"> 
+                    <a href="tel:0383684321" class="">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------Back-top----------------->
+    <div id="backtop">
+        <i class="fa-solid fa-chevron-up"></i>
+        
+    </div>
+
+    <script src="script.js"></script>
+
+    
+    <!----------------footer----------------->
+    <footer class="footer">
+        <div class="footer-left">
+            <h3>Nguyễn Danh<span>Phóng</span></h3>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Văn Khê</span> Hà Đông</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>0383684321</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="">danhphong200412@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing
+                elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet.
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/profile.php?id=100049137288608"><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+
+            </div>
+        </div>
+        
+    </footer>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+  $(window).scroll(function(){
+    if ($(this).scrollTop()) {
+      $('#backtop').fadeIn();
+    } else {
+      $('#backtop').fadeOut();
+    }
+  });
+  $("#backtop").click(function(){
+    $('html, body').animate({
+      scrollTop: 0 
+    }, 500);
+  });
+});
+    </script>
+</html>

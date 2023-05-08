@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Máy Tính Pc</title>
+        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">         
+        <script src="https://kit.fontawesome.com/f726daf95a.js" crossorigin="anonymous"></script>
+
+        
+
+
+    </head>
+    <body>
+        <!-- header -->
+            <!-- header -->
+        <header>
+            <nav>
+                <div class="box-menu">
+                    <h4 class="logo"><img src="./banner/logoo.png" alt=""></h4>
+                    <ul>
+                        
+                        <li class="active" ><a href=""><i class="fa fa-home"aria-hidden="true"></i> Trang chủ</a></li>    
+                        <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Sản Phẩm <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="box-submenu">
+                                <ul>
+                                    <li class="submenu-hover"><a href=""> LapTop </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="box-submenu-2">
+                                            <ul>
+                                                <li><a href="./LaptopGaming.html">LapTop Gaming</a></li>
+                                                <li><a href="./laptophoctap.html">LapTop Học Tập & Văn Phòng</a></li>
+                                                <li><a href="./laptopdohoa.html">LapTop Đồ Họa</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-hover"><a href="">Phụ kiện </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="box-submenu-3">
+                                            <ul>
+                                                <li><a href="./laptop ban phim.html">Bàn phím & Chuột</a></li>
+                                                <li><a href="./loa.html">Loa</a></li>
+                                                <li><a href="./tai nghe.html">Tai Nghe</a></li>
+                                                <li><a href="./USB.html">USB</a></li>
+                                                <li><a href="./phanmem.html">Phần Mềm</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="./maytinhpc.html">Màn Hình Máy Tính Pc</a></li>
+                                    <li><a href="./dongho.html">Đồng Hồ Cao Cấp</a></li>
+                                    <li><a href="">Sạc Dự Phòng</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-clone" aria-hidden="true"></i> Giới thiệu <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="box-submenu">
+                                <ul>
+                                    <li class="submenu-hover"><a href="./laptop Macbook.html">LapTop Macbook</a></li>
+                                    <li class="submenu-hover"><a href="./Laptop Acer.html">LapTop Acer</a></li>                                           
+                                    <li class="submenu-hover"><a href="./Laptop Asus.html">LapTop Asus</a></li>                                          
+                                    <li class="submenu-hover"><a href="./lapropDell.html">LapTop Dell</a></li>
+                                    <li class="submenu-hover"><a href="./Laptop Lenovo .html">LapTop Lenovo</a></li>
+                                    <li class="submenu-hover"><a href="./laptop Hp.html">LapTop Hp</a></li>
+                                    <li class="submenu-hover"><a href="./laptop msi.html">LapTop Msi</a></li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <!-- cart -->
+                        <button id="cart">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i> Giỏ Hàng </button>
+                    </ul>
+                </div>
+                <!-- cart -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản
+                                    Phẩm</span>
+                                <span class="cart-price cart-header
+                                    cart-column">Giá</span>
+                                <span class="cart-quantity cart-header
+                                    cart-column">Số Lượng</span>
+                            </div>
+                            <div class="cart-items">
+
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="row">Thông Tin Đơn Hàng</div>
+                            <div class="row-b mb-3">
+                                <div class="col-md-6">
+                                    <label>Họ tên của quý khách</label><br>
+                                    <input  type="text" name="hoten">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Email của quý khách</label><br>
+                                    <input  type="text" name="email" type="email" >
+                                </div>
+                            </div>
+                            <div class="row-b mb-3">
+                                <div class="col-md-6">
+                                    <label>Địa chỉ giao hàng</label><br>
+                                    <input type="text" name="diachi" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Điện thoại</label><br>
+                                    <input  type="text" name="dienthoai" >
+                                </div>
+                            </div>
+                        </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- form search -->
+        <div class="search-form" id="frm-search" name="search" action="/tim">
+            <form>
+                <button type="button" id="sbutton"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <input type="text" placeholder="Bạn muốn tìm sản phẩm gì?" >
+            </form>
+        </div>
+       
+        <!-- banner -->
+        <section class="row banner padd20">
+            <div class="container">
+                <div class="left mr">
+                    <img src="./img pc/banner.pc.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="banner1 mb20">
+                        <img src="./banner/giao hàng.png" alt="">
+                    </div>
+                    <div class="banner2">
+                        <img src="./banner/cảm ơn khách hàng.png" alt="">
+                    </div>
+                </div>
+            </div> 
+        </section>
+        
+        <!---------------------- --sản phẩm------------------->
+        <section class="wrapper" >
+            <div class="products">
+                <ul>
+                    <div class="banner-1">
+                        <div class="title-banner">
+                            <img
+                                src="./img pc/pc.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img pc/1.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Màn hình Asus VZ24EHE-R 23.8 inch FHD</h3>
+                            <div class="item-compare">
+                                <span>75 Hz</span>
+                                <span>1 ms</span>
+                            </div>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">                                    
+                                        <span class="old-price">2.750.000đ</span>
+                                        <span class="sale">-9%</span>
+                                        <span class="money">2.480.000đ</span>  
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img pc/2.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Màn hình Asus VY249HE 23.8 inch Full HD </h3>
+                            <div class="item-compare">
+                                <span>75 Hz</span>
+                                <span>1 ms</span>
+                            </div> 
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">3.390.000₫</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">3.050.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm  Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img pc/3.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Màn hình  Asus VY279HE 27 inch FHD </h3>
+                            <div class="item-compare">
+                                <span>75 Hz</span>
+                                <span>1 ms</span>
+                            </div>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">4.050.000₫</span>
+                                    <span class="sale">-9%</span>
+                                    <span class="money">3.650.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img pc/4.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Màn hình  Asus TUF Gaming VG249Q1A FHD 
+                            </h3>
+                            <div class="item-compare">
+                                <span>165 Hz</span>
+                                <span>1 ms</span>
+                            </div>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">4.190.000₫</span>
+                                    <span class="sale">-15%</span>
+                                    <span class="money">3.990.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img pc/5.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Màn hình  Dell P2422H 23.8 inch Full HD 
+                            </h3>
+                            <div class="item-compare">
+                                <span>60 Hz</span>
+                                <span>5 ms</span>
+                            </div>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                        <span class="old-price">6.390.000₫</span>
+                                        <span class="sale">-10%</span>
+                                        <span class="money">5.390.000₫</span>
+                                    
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>      
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img pc/6.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Màn hình  Dell Gaming S2522HG 24.5 inch FHD
+                            </h3>
+                            <div class="item-compare">
+                                <span>240 Hz</span>
+                                <span>1 ms</span>
+                            </div>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">9.990.000₫</span>
+                                    <span class="sale">-23%</span>
+                                    <span class="money">7.690.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img pc/7.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Màn hình  LG Gaming UltraGear  23.8 inch FHD 
+                            </h3>
+                            <div class="item-compare">
+                                <span>165 Hz</span>
+                                <span>1 ms</span>
+                            </div>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">3.890.000₫</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">3.500.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img pc/8.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Màn hình  Lenovo L24q-35 66D1GAC1VN 23.8 inch 2K 
+                            </h3>
+                            <div class="item-compare">
+                                <span>75 Hz</span>
+                                <span>4 ms - 6 ms</span>
+                            </div>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">6.590.000₫</span>
+                                    <span class="sale">-24%</span>
+                                    <span class="money">4.990.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img pc/9.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Màn hình  Asus ProArt PA247CV 23.8 inch FHD
+                            </h3>
+                            <div class="item-compare">
+                                <span>75 Hz</span>
+                                <span>5 ms</span>
+                            </div>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                        <span class="old-price">7.090.000₫</span>
+                                        <span class="sale">-9%</span>
+                                        <span class="money">6.390.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img pc/10.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Màn hình  LG Gaming UltraGear  27 inch FHD
+                            </h3>
+                            <div class="item-compare">
+                                <span>165 Hz</span>
+                                <span>1 ms</span>
+                            </div>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">4.990.000₫</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">4.490.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img pc/11.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Màn hình  LG 24QP750-B.ATV 23.8 inch 2K
+                            </h3>
+                            <div class="item-compare">
+                                <span>75 Hz</span>
+                                <span>5 ms</span>
+                            </div>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">8.190.000₫</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">7.190.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img pc/12.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Màn hình  HP P24 G5 64X66AA 23.8 inch FHD
+                            </h3>
+                            <div class="item-compare">
+                                <span>75 Hz</span>
+                                <span>5 ms</span>
+                            </div>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">5.500.000₫</span>
+                                    <span class="sale">-8%</span>
+                                    <span class="money">4.500.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+ 
+        <!----------------Hotline----------------->
+        <div class="hotline">
+            <div class="call call_zalo">
+                <div class="hotline-phone-ring">
+                    <div class="hotline-phone-ring-circle"></div>
+                    <div class="hotline-phone-ring-circle-fill"></div>
+                    <div class="hotline-phone-ring-img-circle"> 
+                        <a href="http://zalo.me/0383684321" class="">
+                            <img src="https://fastcare.vn/assets/images/zalo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>       
+            <div class="call call_phone">
+                <div class="hotline-phone-ring">
+                    <div class="hotline-phone-ring-circle"></div>
+                    <div class="hotline-phone-ring-circle-fill"></div>
+                    <div class="hotline-phone-ring-img-circle"> 
+                        <a href="tel:0383684321" class="">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------footer----------------->
+        <footer class="footer">
+            <div class="footer-left">
+                <h3>Nguyễn Danh<span>Phóng</span></h3>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Văn Khê</span> Hà Đông</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>0383684321</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="">danhphong200412@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing
+                    elit. Fusce euismod convallis velit, eu auctor lacus
+                    vehicula sit amet.
+                </p>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100049137288608"><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-github"></i></a>
+
+                </div>
+            </div>
+        </footer>
+        
+        <!----------------Back-top----------------->
+        <div id="backtop">
+            <i class="fa-solid fa-chevron-up"></i>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $(window).scroll(function(){
+            if ($(this).scrollTop()) {
+            $('#backtop').fadeIn();
+            } else {
+            $('#backtop').fadeOut();
+            }
+        });
+        $("#backtop").click(function(){
+            $('html, body').animate({
+            scrollTop: 0 
+            }, 500);
+        });
+        });
+    </script>
+</html>

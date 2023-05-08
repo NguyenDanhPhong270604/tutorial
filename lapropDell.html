@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Giới thiệu về laptop Dell</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f726daf95a.js" crossorigin="anonymous"></script>
+            
+    </head>
+    <body>
+        <style>
+.menu {
+    max-width: 1400px;
+    margin:  auto;
+    margin-top: 20px;
+}           
+.menu-bar h1{
+  font-size: 30px;
+  text-align: center;
+  margin-right: 16px;
+  margin-left: 25px;
+}
+.menu-slide h3 {
+    font-size: 25px;
+    margin-right: 16px;
+    margin-left: 25px;
+}
+
+.menu-slide p {
+   font-size: 20px;
+   margin-right: 16px;
+    margin-left: 25px;
+}   
+.menu-slide img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     width: 800px;
+}
+/* Menu */
+.box-menu{ 
+  background-color: #09993e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6%;
+}
+
+.logo {
+  color: white;
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.box-menu ul{ 
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.box-menu ul li{ 
+  width: 170px;
+  margin: 5px;
+  padding: 15px;
+}
+
+.box-menu ul li a{ 
+  color: #fff;
+  text-decoration: none;
+  
+}
+.active,.box-menu ul li:hover{ 
+  border-radius: 3px;
+  z-index: 999;
+}
+.box-menu .fa{ 
+  margin-right: 5px;
+}
+
+.box-submenu{
+   display: none;
+   transition: 0.5s ease-in-out;
+}
+.box-menu ul li:hover .box-submenu{
+  display: block;
+  position: absolute;
+  background: #13ac13;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.box-menu ul li:hover .box-submenu ul{
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.box-menu ul li:hover .box-submenu ul li{
+  width: 220px;
+  text-align: left;
+  border-bottom: dotted 1px #fff;
+  background: transparent;
+  border-radius: 0;
+  padding: 15px;
+  margin: 10px;
+  
+}
+.box-menu ul li:hover .box-submenu ul li:last-child{
+  border-bottom: none;
+}
+.box-menu ul li:hover .box-submenu ul li a:hover{
+  color: rgb(177, 20, 20);
+}
+.fa-angle-right{
+  float: right;
+}
+.box-submenu-2{
+  display: none;
+}
+
+.submenu-hover:hover .box-submenu-2{
+  display: block;
+  position: absolute;
+  margin-top: -44px;
+  margin-left: 210px;
+  background: #bebe07;
+ 
+}
+
+/************** footer ************************/
+.footer{
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 20px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer h3 span{
+  color:  lightseagreen;
+}
+
+/* Footer Center */
+.footer .footer-center{
+  width: 35%;
+}
+.footer .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+.footer-company-name {
+  align-items: center;
+  text-align: center;
+  background-color: #09993e;
+  color:  #fff;
+}
+/* Footer Right */
+
+.footer .footer-right{
+  width: 20%;
+}
+
+.footer .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .footer-icons{
+  margin-top: 25px;
+}
+
+.footer .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+.footer .footer-icons a:hover{
+  background-color: #0275d8;
+  transition: 0.5s;
+}
+/* mobile */
+
+@media (max-width: 880px) {
+
+  .footer{
+    font: bold 14px sans-serif;
+  }
+
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer .footer-center i{
+    margin-left: 0;
+  }
+
+}     
+
+
+
+
+    </style>
+        <!-- header -->
+      <!-- header -->
+      <header>
+        <nav>
+            <div class="box-menu">
+                <h4 class="logo"><img src="./banner/logoo.png" alt=""></h4>
+                <ul>
+                    
+                    <li class="active" ><a href="./index.html"><i class="fa fa-home"aria-hidden="true"></i> Trang chủ</a></li>    
+                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Sản Phẩm <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="box-submenu">
+                            <ul>
+                                <li class="submenu-hover"><a href=""> LapTop </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    <div class="box-submenu-2">
+                                        <ul>
+                                            <li><a href="./LaptopGaming.html">LapTop Gaming</a></li>
+                                            <li><a href="./laptophoctap.html">LapTop Học Tập & Văn Phòng</a></li>
+                                            <li><a href="./laptopdohoa.html">LapTop Đồ Họa</a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="submenu-hover"><a href="">Phụ kiện </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    <div class="box-submenu-3">
+                                        <ul>
+                                            <li><a href="./laptop ban phim.html">Bàn phím & Chuột</a></li>
+                                            <li><a href="./loa.html">Loa</a></li>
+                                            <li><a href="./tai nghe.html">Tai Nghe</a></li>
+                                            <li><a href="./USB.html">USB</a></li>
+                                            <li><a href="./phanmem.html">Phần Mềm</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="./maytinhpc.html">Màn Hình Máy Tính Pc</a></li>
+                                <li><a href="./dongho.html">Đồng Hồ Cao Cấp</a></li>
+                                <li><a href="">Sạc Dự Phòng</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-clone" aria-hidden="true"></i> Giới thiệu <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="box-submenu">
+                            <ul>
+                                <li class="submenu-hover"><a href="./laptop Macbook.html">LapTop Macbook</a></li>
+                                <li class="submenu-hover"><a href="./Laptop Acer.html">LapTop Acer</a></li>                                           
+                                <li class="submenu-hover"><a href="./Laptop Asus.html">LapTop Asus</a></li>                                          
+                                <li class="submenu-hover"><a href="./lapropDell.html">LapTop Dell</a></li>
+                                <li class="submenu-hover"><a href="./Laptop Lenovo .html">LapTop Lenovo</a></li>
+                                <li class="submenu-hover"><a href="./laptop Hp.html">LapTop Hp</a></li>
+                                <li class="submenu-hover"><a href="./laptop msi.html">LapTop Msi</a></li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <!-- cart -->
+                    <button id="cart">
+                        <i class="fa fa-shopping-basket" aria-hidden="true"></i> Giỏ Hàng </button>
+                </ul>
+            </div>
+            <!-- cart -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản
+                                Phẩm</span>
+                            <span class="cart-price cart-header
+                                cart-column">Giá</span>
+                            <span class="cart-quantity cart-header
+                                cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">Thông Tin Đơn Hàng</div>
+                        <div class="row-b mb-3">
+                            <div class="col-md-6">
+                                <label>Họ tên của quý khách</label><br>
+                                <input  type="text" name="hoten">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Email của quý khách</label><br>
+                                <input  type="text" name="email" type="email" >
+                            </div>
+                        </div>
+                        <div class="row-b mb-3">
+                            <div class="col-md-6">
+                                <label>Địa chỉ giao hàng</label><br>
+                                <input type="text" name="diachi" >
+                            </div>
+                            <div class="col-md-6">
+                                <label>Điện thoại</label><br>
+                                <input  type="text" name="dienthoai" >
+                            </div>
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- form search -->
+    <div class="search-form" id="frm-search" name="search" action="/tim">
+        <form>
+            <button type="button" id="sbutton"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <input type="text" placeholder="Bạn muốn tìm sản phẩm gì?" >
+        </form>
+    </div>
+
+      <!-- sản Phẩm -->
+        <div class="menu">
+                <div class="menu-bar">
+                    <h1>Giới thiệu về thương hiệu Laptop Dell</h1>
+                </div>
+                <div class="menu-slide">
+                    <h3>Thương hiệu Laptop Dell</h3>
+                    <p>
+                        <b>Laptop Dell</b> là một trong những thương hiệu nổi tiếng từ
+                        lâu, thuộc <b>Dell Inc</b> được thành lập vào năm 1984 bởi
+                        Michael Dell, là một công ty đa quốc gia của Hoa Kỳ về phát
+                        triển và thương mại hóa công nghệ máy tính có trụ sở tại Round
+                        Rock, Texas, Hoa Kỳ.</p>
+                    <img
+                        src="https://www.anphatpc.com.vn/media/news/0504_RR1-_Dell_Campus.jpg"
+                        alt="">
+
+                    <p>Michael Dell quyết định thành lập công ty mang tên <b> Dell
+                            Computer Corp</b> và vào năm 1988, Dell Computer lần đầu
+                        phát hành cổ phiếu đại chúng và thu về 30 triệu USD. Những sản
+                        phẩm của Dell bao gồm: <mark>Laptop, Máy tính bàn, Màn hình máy
+                            tính, Pocket PC, Chip xử lý.</mark></p>
+
+                    <p>Nổi bật nhất với những thành tích như <b> Dell </b> được tạp chí
+                        <b>Thế Giới Vi Tính Việt Nam bình chọn </b> bình chọn là sản
+                        phẩm Máy tính xách tay được yêu thích nhất năm 2011 (theo
+                        wikipedia); Vào Năm 2015, đây là nhà cung cấp PC lớn thứ ba trên
+                        thế giới sau Lenovo và HP (theo wikipedia); <b>Dell </b> giành
+                        được lợi thế tuyệt đối tại giải <b>Best Cup 2018</b> Ở hạng mục
+                        <mark> laptop 2 trong 1, </mark> năm 2018; Dell xếp thứ 2 trong
+                        nhóm Các công ty máy tính lớn nhất thế giới trong hạng mục Công
+                        nghiệp máy tính theo số liệu của Forbes và Dell xếp thứ 6 trong
+                        25 cơ sở làm việc đa quốc gia tốt nhất thế giới theo kết quả
+                        nghiên cứ của EMC...</p>
+
+                    <img
+                        src="https://www.anphatpc.com.vn/media/news/0110_laptopdell4.jpg"
+                        alt="">
+
+                    <p> Dell gây được tiếng vang nhất bởi các sản phẩm Máy tính xách tay
+                        ( Laptop) được đông đảo tín đồ công nghệ trên thế giới ưa
+                        chuộng, <mark>Laptop Dell</mark> luôn dẫn đầu về công nghệ, nổi
+                        tiếng là một trong những thương hiệu laptop bền bỉ, cấu hình
+                        mạnh mẽ thể hiện ở các ưu điểm của laptop Dell là độ bền cao,
+                        thiết kế cứng cáp, cấu hình đa dạng mạnh mẽ, dễ dàng nâng cấp và
+                        có giá thành phù hợp nhiều phân khúc khách hàng với từng nhu cầu
+                        sử dụng khác nhau.</p>
+
+                    <p>Có thể bạn chưa biết xuất xứ laptop <b>Dell</b> khoảng 95% máy
+                        tính xách tay <b>Dell</b> được sản xuất tại các quốc gia châu Á
+                        là Penang, Malaysia và Hạ Môn, Trung Quốc nhưng để đáp ứng nhu
+                        cầu của tiểu lục địa và Nam Mỹ, <b>Dell</b> đã đầu tư thêm vào
+                        cả Chennai, Ấn Độ lẫn Hortolandia, Brazil.</p>
+
+
+                    <p> Các sản phẩm <b> Laptop Dell </b> được nhập khẩu chính hãng vào
+                        thị trường Việt Nam luôn được đảm bảo về chất lượng, kèm theo
+                        chính sách bảo hành và chế độ hậu mãi tuyệt vời nhận được sự
+                        quan tâm cũng như ưa chuộng của người dùng công nghệ.</p>
+
+                    <p>
+                        <b>Thiết kế </b> Hầu hết các dòng sản phẩm <mark> máy tính xách
+                            tay </mark> của Dell đều có những điểm tương đồng, thiết kế
+                        cứng cáp và nặng hơn so với các thương hiệu khác. Bởi các hãng
+                        luôn quan tâm đến độ bền của các linh kiện bên trong và khả năng
+                        sinh nhiệt của laptop khi hoạt động với hiệu suất cao, khối
+                        lượng lớn. Dell đã có rất nhiều cải tiến về thiết kế trong những
+                        năm gần đây, khiến máy trở nên hiện đại hơn, có nhiều mẫu mã đa
+                        dạng để lựa chọn nhằm thu hút được các đối tượng khách hàng đa
+                        dạng hơn.
+                    </p>
+                    <p> Hiện nay hãng đã áp dụng bản lề mới giúp tăng hiệu suất thoáng
+                        khí, cùng với cải tiến trọng lượng của máy, thiết kế mỏng và nhẹ
+                        người dùng dễ dàng mang theo khi đi ra ngoài.</p>
+                    <img src="https://www.anphatpc.com.vn/media/news/0504_jtytyi.jpg"
+                        alt="">
+
+                    <p> <b>Về màn hình hiển thị và âm thanh:</b> Hầu hết các mẫu laptop
+                        Dell mới đều có màn hình 14 inch, 15,6 inch HD hoặc Full HD.
+                        <mark> Máy tính xách tay 14 inch </mark> của Dell trông sôi động
+                        hơn trước, nhưng nhìn chung, màn hình của Dell nhìn chung sáng
+                        hơn so với máy tính xách tay trung bình (242 lux), với 267 lux.</p>
+                    <p> Về âm thanh, hầu hết các dòng laptop trên thị trường hiện nay
+                        chỉ đáp ứng được những nhu cầu đơn giản như nghe nhạc hay xem
+                        phim. Máy tính xách tay Dell thường chỉ đạt 84 decibel khi thử
+                        nghiệm, thấp hơn mức trung bình của các máy tính xách tay khác.</p>
+                    <p> <b> Phần cứng bền và tốt:</b> Dell nổi tiếng với độ bền cao, rất
+                        ít xảy ra lỗi trong quá trình sử dụng. Hầu hết các dòng laptop
+                        Dell đều được thiết kế dày, không quá mỏng nhưng kiểu dáng đẹp,
+                        chú trọng nhiều hơn đến độ bền của các phụ kiện bên trong. Vì
+                        vậy, hầu hết những người chọn sử dụng laptop Dell đều đánh giá
+                        độ bền của máy khá “trâu” và hiệu năng phần cứng (ổ cứng, RAM,
+                        CPU…) khá cao, mạnh mẽ và đặc trưng cho từng dòng. Ngoài ra,
+                        Dell luôn đầu tư vào thiết kế của bàn phím và bàn di chuột để
+                        chúng có độ nhạy tối ưu và tạo cảm giác thân thiện với người
+                        dùng.</p>
+                    <img src="https://www.anphatpc.com.vn/media/news/0504_yti.png"
+                        alt="">
+
+                    <p> <b>Về pin:</b> Phần lớn laptop Dell giá rẻ đa số được trang bị
+                        dung lượng pin ở mức đủ dùng cơ bản khoảng vài giờ còn nếu bạn
+                        sở hữu các dòng máy cao cấp hơn của Dell dành cho đồ họa chuyên
+                        nghiệp hoặc gaming thì được trang bị Pin" trâu" hơn với thời
+                        lượng pin làm việc sẽ được cải thiện tốt hơn, có thể lên tới 7-9
+                        tiếng.</p>
+
+                    <p> <b>Cấu hình mạnh mẽ:</b> Về hiệu năng thì dòng laptop Dell luôn
+                        được người dùng đánh giá cao khi thường được trang bị vi xử lý
+                        <b> Intel H series </b> cao cấp và <b>AMD Ryzen </b> đảm bảo
+                        mang đến hiệu năng tối ưu. </p>
+
+                    <img
+                        src="https://www.anphatpc.com.vn/media/news/0504_laptop-dell-cua-nuoc-nao-10.jpg"
+                        alt="">
+                </div>
+
+        </div>
+        <footer class="footer">
+            <div class="footer-left">
+                <h3>Nguyễn Danh<span>Phóng</span></h3>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Văn Khê</span> Hà Đông</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>0383684321</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="">danhphong200412@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing
+                    elit. Fusce euismod convallis velit, eu auctor lacus
+                    vehicula sit amet.
+                </p>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100049137288608"><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-github"></i></a>
+
+                </div>
+            </div>
+            
+        </footer>
+       <!----------------Back-top----------------->
+       <div id="backtop">
+        <i class="fa-solid fa-chevron-up"></i>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.js"integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+    $(window).scroll(function(){
+        if ($(this).scrollTop()) {
+        $('#backtop').fadeIn();
+        } else {
+        $('#backtop').fadeOut();
+        }
+    });
+    $("#backtop").click(function(){
+        $('html, body').animate({
+        scrollTop: 0 
+        }, 500);
+    });
+    });
+</script>
+   
+</html>

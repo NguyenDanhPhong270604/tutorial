@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Laptop Gaming</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+        <script src="https://kit.fontawesome.com/f726daf95a.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        
+        <!-- header -->
+                    <!-- header -->
+        <header>
+            <nav>
+                <div class="box-menu">
+                    <h4 class="logo"><img src="./banner/logoo.png" alt=""></h4>
+                    <ul>
+                        
+                        <li class="active" ><a href=""><i class="fa fa-home"aria-hidden="true"></i> Trang chủ</a></li>    
+                        <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Sản Phẩm <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="box-submenu">
+                                <ul>
+                                    <li class="submenu-hover"><a href=""> LapTop </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="box-submenu-2">
+                                            <ul>
+                                                <li><a href="./LaptopGaming.html">LapTop Gaming</a></li>
+                                                <li><a href="./laptophoctap.html">LapTop Học Tập & Văn Phòng</a></li>
+                                                <li><a href="./laptopdohoa.html">LapTop Đồ Họa</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-hover"><a href="">Phụ kiện </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="box-submenu-3">
+                                            <ul>
+                                                <li><a href="./laptop ban phim.html">Bàn phím & Chuột</a></li>
+                                                <li><a href="./loa.html">Loa</a></li>
+                                                <li><a href="./tai nghe.html">Tai Nghe</a></li>
+                                                <li><a href="./USB.html">USB</a></li>
+                                                <li><a href="./phanmem.html">Phần Mềm</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="./maytinhpc.html">Màn Hình Máy Tính Pc</a></li>
+                                    <li><a href="./dongho.html">Đồng Hồ Cao Cấp</a></li>
+                                    <li><a href="">Sạc Dự Phòng</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-clone" aria-hidden="true"></i> Giới thiệu <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="box-submenu">
+                                <ul>
+                                    <li class="submenu-hover"><a href="./laptop Macbook.html">LapTop Macbook</a></li>
+                                    <li class="submenu-hover"><a href="./Laptop Acer.html">LapTop Acer</a></li>                                           
+                                    <li class="submenu-hover"><a href="./Laptop Asus.html">LapTop Asus</a></li>                                          
+                                    <li class="submenu-hover"><a href="./lapropDell.html">LapTop Dell</a></li>
+                                    <li class="submenu-hover"><a href="./Laptop Lenovo .html">LapTop Lenovo</a></li>
+                                    <li class="submenu-hover"><a href="./laptop Hp.html">LapTop Hp</a></li>
+                                    <li class="submenu-hover"><a href="./laptop msi.html">LapTop Msi</a></li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <!-- cart -->
+                        <button id="cart">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i> Giỏ Hàng </button>
+                    </ul>
+                </div>
+                <!-- cart -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản
+                                    Phẩm</span>
+                                <span class="cart-price cart-header
+                                    cart-column">Giá</span>
+                                <span class="cart-quantity cart-header
+                                    cart-column">Số Lượng</span>
+                            </div>
+                            <div class="cart-items">
+
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="row">Thông Tin Đơn Hàng</div>
+                            <div class="row-b mb-3">
+                                <div class="col-md-6">
+                                    <label>Họ tên của quý khách</label><br>
+                                    <input  type="text" name="hoten">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Email của quý khách</label><br>
+                                    <input  type="text" name="email" type="email" >
+                                </div>
+                            </div>
+                            <div class="row-b mb-3">
+                                <div class="col-md-6">
+                                    <label>Địa chỉ giao hàng</label><br>
+                                    <input type="text" name="diachi" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Điện thoại</label><br>
+                                    <input  type="text" name="dienthoai" >
+                                </div>
+                            </div>
+                        </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- form search -->
+        <div class="search-form" id="frm-search" name="search" action="/tim">
+            <form>
+                <button type="button" id="sbutton"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <input type="text" placeholder="Bạn muốn tìm sản phẩm gì?" >
+            </form>
+        </div>
+
+        
+        <!-- banner -->
+        <section class="row banner padd20">
+            <div class="container">
+                <div class="left mr">
+                    <img src="./img gaming/banner gaming.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="banner1 mb20">
+                        <img src="./banner/giao hàng.png" alt="">
+                    </div>
+                    <div class="banner2">
+                        <img src="./banner/cảm ơn khách hàng.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Sản Phẩm -->
+        <section class="wrapper">
+            <div class="products">
+                <ul>
+                    <div class="banner-1">
+                        <div class="title-banner">
+                            <img
+                                src="./img gaming/bannergaming.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/4.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Acer Predator Helios PH18 i9 /Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 32GB</span>
+                                <span>SSD 2TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 18 inch, 2K, 240Hz</p>
+                                <p>CPU: i9, 13900HX, 3.90 GHz</p>
+                                <p>Card: RTX 4080 12GB</p>
+                                <p>Pin: 4-cell, 90Wh</p>
+                                <p>Khối lượng: 3.1 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">125.000.000đ</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">119.000.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/1.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Asus Gaming ROG Strix SCAR 18 i9 Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 32GB</span>
+                                <span>SSD 2TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 18 inch, 2K, 240Hz</p>
+                                <p>CPU: i9, 13980HX, 2.2GHz</p>
+                                <p>Card: RTX 4090 16GB</p>
+                                <p>Pin: 4-cell, 90Wh</p>
+                                <p>Khối lượng: 3.1 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">125.000.000đ</span>
+                                    <span class="sale">-8%</span>
+                                    <span class="money">115.000.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/2.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop HP Omen 16 R9 1TB/165Hz/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 32GB</span>
+                                <span>SSD 2TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 16.1", 2K, 165Hz</p>
+                                <p>CPU: Ryzen 9, 6900HX, 3.3GHz</p>
+                                <p>Card: RTX 3070Ti 8GB</p>
+                                <p>Pin: 6-cell Li-ion, 83 Wh</p>
+                                <p>Khối lượng: 2.35 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">62.890.000₫</span>
+                                    <span class="sale">-7%</span>
+                                    <span class="money">57.890.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/3.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Dell Gaming Alienware m15 R6 i7
+                                /165Hz/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 32GB</span>
+                                <span>SSD 1TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 165Hz</p>
+                                <p>CPU: i7, 11800H, 2.30 GHz</p>
+                                <p>Card: RTX 3060 6GB</p>
+                                <p>Pin: 6-cell Li-ion, 86 Wh</p>
+                                <p>Khối lượng: 2.69 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">61.990.000₫</span>
+                                    <span class="sale">-23%</span>
+                                    <span class="money">47.490.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/5.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop asus gaming rog zephyrus/165hz/win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 16", Full HD, 165Hz</p>
+                                <p>CPU: i7, 13620H, 2.4GHz</p>
+                                <p>Card: RTX 4050 6GB</p>
+                                <p>Pin: 4-cell, 90Wh</p>
+                                <p>Khối lượng: 2 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">46.990.000đ</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">44.990.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/6.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop MSI Gaming GS66 Stealth 11UG i7 /Win10
+                            </h3>
+                            <div class="item-compare">
+                                <span>Ram 32GB</span>
+                                <span>SSD 2TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 360Hz</p>
+                                <p>CPU: i7, 11800H, 2.30 GHz</p>
+                                <p>Card: RTX 3070 Max-Q 8GB</p>
+                                <p>Pin: 4-cell, 99.9Wh</p>
+                                <p>Khối lượng: 2.1 Kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">64.990.000₫</span>
+                                    <span class="sale">-40%</span>
+                                    <span class="money">38.990.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/7.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Acer Nitro 5 Tiger AN515 58 i7
+                                /144Hz/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 144Hz</p>
+                                <p>CPU: i7, 12700H, 2.30 GHz</p>
+                                <p>Card: RTX 3050Ti 4GB</p>
+                                <p>Pin: 4-cell, 57.5Wh</p>
+                                <p>Khối lượng: 2.5 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">31.990.000₫</span>
+                                    <span class="sale">-18%</span>
+                                    <span class="money">26.190.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/8.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Lenovo Legion 5 15IAH7 i5/ 165Hz/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 165Hz</p>
+                                <p>CPU: i5, 12500H, 2.5GHz</p>
+                                <p>Card: RTX 3050Ti 4GB</p>
+                                <p>Pin: 80 Wh</p>
+                                <p>Khối lượng: 2.35 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">35.490.000₫</span>
+                                    <span class="sale">-22%</span>
+                                    <span class="money">27.490.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/9.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Asus TUF Gaming F15 i5 144Hz/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 144Hz</p>
+                                <p>CPU: i5, 12450H, 2GHz</p>
+                                <p>Card: RTX 3050 4GB</p>
+                                <p>Pin: 4-cell, 76Wh</p>
+                                <p>Khối lượng: 2 kg </p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">28.990.000đ</span>
+                                    <span class="sale">-25%</span>
+                                    <span class="money">21.490.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/10.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Acer Aspire 7 Gaming A715 42G/144Hz/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 144Hz</p>
+                                <p>CPU: Ryzen 5, 5500U, 2.1GHz</p>
+                                <p>Card: GTX 1650 4GB</p>
+                                <p>Pin: 48Wh</p>
+                                <p>Khối lượng: 2.1 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">20.490.000₫</span>
+                                    <span class="sale">-21%</span>
+                                    <span class="money">15.990.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/11.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Lenovo Ideapad Gaming 3/ 120Hz/Win11
+                            </h3>
+                            <div class="item-compare">
+                                <span>Ram 32GB</span>
+                                <span>SSD 2TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 120Hz</p>
+                                <p>CPU: Ryzen 5, 6600H, 3.3GHz</p>
+                                <p>Card: RTX 3050Ti 4GB</p>
+                                <p>Pin: 60 Wh</p>
+                                <p>Khối lượng: 2.315 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">28.790.000₫</span>
+                                    <span class="sale">-21%</span>
+                                    <span class="money">22.680.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/12.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop MSI Gaming GF63 Thin 11UC i5
+                                RTX3050/144Hz/Win11 </h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 144Hz</p>
+                                <p>CPU: i5, 11400H, 2.7GHz</p>
+                                <p>Card: RTX 3050 4GB</p>
+                                <p>Pin: 3-cell Li-ion, 52.4 Wh</p>
+                                <p>Khối lượng: 1.86 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">21.490.000₫</span>
+                                    <span class="sale">-11%</span>
+                                    <span class="money">18.990.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="main-product ">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/13.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Acer Nitro 5 Gaming AN515 45
+                                GTX1650/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 144Hz</p>
+                                <p>CPU: Ryzen 5, 5600H, 3.3GHz</p>
+                                <p>Card: GTX 1650 4GB</p>
+                                <p>Pin: 4-cell, 57Wh</p>
+                                <p>Khối lượng: 2.2 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">22.490.000₫</span>
+                                    <span class="sale">-21%</span>
+                                    <span class="money">17.690.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/14.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop HP Gaming VICTUS 16 /144Hz/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 16.1", Full HD, 144Hz</p>
+                                <p>CPU: Ryzen 7, 6800H, 3.2GHz</p>
+                                <p>Card: RTX 3050Ti 4GB</p>
+                                <p>Pin: 4-cell, 70Wh</p>
+                                <p>Khối lượng: 2.4 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">30.990.000₫</span>
+                                    <span class="sale">-8%</span>
+                                    <span class="money">28.390.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/15.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Asus Gaming ROG Strix SCAR 17 /Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 32GB</span>
+                                <span>SSD 1TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 17.3", 2K, 240Hz</p>
+                                <p>CPU: Ryzen 9, 7945HX, 2.5GHz</p>
+                                <p>Card: RTX 4080 12GB</p>
+                                <p>Pin: 4-cell, 90Wh</p>
+                                <p>Khối lượng: 3 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">26.990.000₫</span>
+                                    <span class="sale">-22%</span>
+                                    <span class="money">20.990.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/16.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop HP Omen 16 R7 SSD/6GB /165Hz/Win11 </h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>
+                                <span>SSD 1TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 16.1", 2K, 165Hz</p>
+                                <p>CPU: Ryzen 7, 6800H, 3.2GHz</p>
+                                <p>Card: RTX 3060 6GB</p>
+                                <p>Pin: 6-cell Li-ion, 83 Wh</p>
+                                <p>Khối lượng: 2.35 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">50.890.000₫</span>
+                                    <span class="sale">-7%</span>
+                                    <span class="money">46.890.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/asus.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Asus Gaming TUF Dash F15 i5
+                                RTX3050Ti/144Hz/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 144Hz</p>
+                                <p>CPU: i5, 12450H, 2GHz</p>
+                                <p>Card: RTX 3050Ti 4GB</p>
+                                <p>Pin: 4-cell, 76Wh</p>
+                                <p>Khối lượng: 2.0 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">29.990.000₫</span>
+                                    <span class="sale">-20%</span>
+                                    <span class="money">23.990.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/1.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Asus Gaming ROG Strix i7/ 240Hz/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>
+                                <span>SSD 1TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 16", 2K, 240Hz</p>
+                                <p>CPU: i7, 13650HX, 2.6GHz</p>
+                                <p>Card: RTX 4070 8GB</p>
+                                <p>Pin: 4-cell, 90Wh</p>
+                                <p>Khối lượng: 2.5 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">60.990.000₫</span>
+                                    <span class="sale">-1%</span>
+                                    <span class="money">59.990.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/msi.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                MSI GE76 Raider Core i7-11800H, 144Hz/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 16GB</span>
+                                <span>SSD 1TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 17.3" IPS FHD 144Hz</p>
+                                <p>CPU: i7, 11800H, 3200MHz</p>
+                                <p>Card: RTX 3060 Graphics, 6GB</p>
+                                <p>Pin: 4Cell, 99.9Whr</p>
+                                <p>Khối lượng: 2.9 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">41.990.000₫</span>
+                                    <span class="sale">-14%</span>
+                                    <span class="money">35.990.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/6.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                MSI Raider GE76 12UHS 480VN 120Hz</h3>
+                            <div class="item-compare">
+                                <span>Ram 64GB</span>
+                                <span>SSD 2TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 17.3 inch UHD, 120Hz</p>
+                                <p>CPU: i9, 12900HK</p>
+                                <p>Card: RTX 3080 Ti 16GB GDDR6</p>
+                                <p>Pin: 4Cell, 99.9Whr</p>
+                                <p>Khối lượng: 2.9 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">120.000.000₫</span>
+                                    <span class="sale">-8%</span>
+                                    <span class="money">110.890.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/13.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Acer Nitro 5 Tiger/Win11 </h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 144Hz</p>
+                                <p>CPU: i7, 12700H, 2.30 GHz</p>
+                                <p>Card: RTX 3050Ti 4GB</p>
+                                <p>Pin: 4-cell, 57.5Wh</p>
+                                <p>Khối lượng: 2.5 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">31.990.000đ</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">28.490.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/10.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Acer Aspire 7 Gaming A715 42G/144Hz/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 144Hz</p>
+                                <p>CPU: Ryzen 5, 5500U, 2.1GHz</p>
+                                <p>Card: GTX 1650 4GB</p>
+                                <p>Pin: 48Wh</p>
+                                <p>Khối lượng: 2.1 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">20.490.000₫</span>
+                                    <span class="sale">-21%</span>
+                                    <span class="money">15.990.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/4.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Acer Predator Helios PH18/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 32GB</span>
+                                <span>SSD 2TB GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 18 inch, 2K, 240Hz</p>
+                                <p>CPU: i9, 13900HX, 3.90 GHz</p>
+                                <p>Card: RTX 4080 12GB</p>
+                                <p>Pin: 4-cell, 90Wh</p>
+                                <p>Khối lượng: 3.1 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">120.990.000₫</span>
+                                    <span class="sale">-1%</span>
+                                    <span class="money">119.000.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img gaming/10.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Laptop Acer Nitro 5 Gaming AN515 57/Win11</h3>
+                            <div class="item-compare">
+                                <span>Ram 8GB</span>
+                                <span>SSD 512 GB</span>
+                            </div>
+                            <div class="utility">
+                                <p>Màn hình: 15.6", Full HD, 144Hz</p>
+                                <p>CPU: i7, 11800H, 2.30 GHz</p>
+                                <p>Card: RTX 3050Ti 4GB</p>
+                                <p>Pin: 4-cell, 57.5Wh</p>
+                                <p>Khối lượng: 2.2 kg</p>
+                            </div>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">28.990.000₫</span>
+                                    <span class="sale">-21%</span>
+                                    <span class="money">22.990.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <!----------------Hotline----------------->
+        <div class="hotline">
+            <div class="call call_zalo">
+                <div class="hotline-phone-ring">
+                    <div class="hotline-phone-ring-circle"></div>
+                    <div class="hotline-phone-ring-circle-fill"></div>
+                    <div class="hotline-phone-ring-img-circle"> 
+                        <a href="http://zalo.me/0383684321" class="">
+                            <img src="https://fastcare.vn/assets/images/zalo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>       
+            <div class="call call_phone">
+                <div class="hotline-phone-ring">
+                    <div class="hotline-phone-ring-circle"></div>
+                    <div class="hotline-phone-ring-circle-fill"></div>
+                    <div class="hotline-phone-ring-img-circle"> 
+                        <a href="tel:0383684321" class="">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------Back-top----------------->
+        <div id="backtop">
+            <i class="fa-solid fa-chevron-up"></i>
+
+        </div>
+
+        <script src="script.js"></script>
+
+
+        <!----------------footer---------------->
+        <!----------------footer----------------->
+        <footer class="footer">
+            <div class="footer-left">
+                <h3>Nguyễn Danh<span>Phóng</span></h3>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Văn Khê</span> Hà Đông</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>0383684321</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="">danhphong200412@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing
+                    elit. Fusce euismod convallis velit, eu auctor lacus
+                    vehicula sit amet.
+                </p>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100049137288608"><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-github"></i></a>
+
+                </div>
+            </div>
+            
+        </footer>
+        
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+  $(window).scroll(function(){
+    if ($(this).scrollTop()) {
+      $('#backtop').fadeIn();
+    } else {
+      $('#backtop').fadeOut();
+    }
+  });
+  $("#backtop").click(function(){
+    $('html, body').animate({
+      scrollTop: 0 
+    }, 500);
+  });
+});
+    </script>
+</html>

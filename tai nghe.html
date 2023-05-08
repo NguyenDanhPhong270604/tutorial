@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tai Nghe Bluetooth</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+        <script src="https://kit.fontawesome.com/f726daf95a.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <!-- header -->
+            <!-- header -->
+        <header>
+            <nav>
+                <div class="box-menu">
+                    <h4 class="logo"><img src="./banner/logoo.png" alt=""></h4>
+                    <ul>
+                        
+                        <li class="active" ><a href=""><i class="fa fa-home"aria-hidden="true"></i> Trang chủ</a></li>    
+                        <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Sản Phẩm <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="box-submenu">
+                                <ul>
+                                    <li class="submenu-hover"><a href=""> LapTop </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="box-submenu-2">
+                                            <ul>
+                                                <li><a href="./LaptopGaming.html">LapTop Gaming</a></li>
+                                                <li><a href="./laptophoctap.html">LapTop Học Tập & Văn Phòng</a></li>
+                                                <li><a href="./laptopdohoa.html">LapTop Đồ Họa</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-hover"><a href="">Phụ kiện </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="box-submenu-3">
+                                            <ul>
+                                                <li><a href="./laptop ban phim.html">Bàn phím & Chuột</a></li>
+                                                <li><a href="./loa.html">Loa</a></li>
+                                                <li><a href="./tai nghe.html">Tai Nghe</a></li>
+                                                <li><a href="./USB.html">USB</a></li>
+                                                <li><a href="./phanmem.html">Phần Mềm</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="./maytinhpc.html">Màn Hình Máy Tính Pc</a></li>
+                                    <li><a href="./dongho.html">Đồng Hồ Cao Cấp</a></li>
+                                    <li><a href="">Sạc Dự Phòng</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-clone" aria-hidden="true"></i> Giới thiệu <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="box-submenu">
+                                <ul>
+                                    <li class="submenu-hover"><a href="./laptop Macbook.html">LapTop Macbook</a></li>
+                                    <li class="submenu-hover"><a href="./Laptop Acer.html">LapTop Acer</a></li>                                           
+                                    <li class="submenu-hover"><a href="./Laptop Asus.html">LapTop Asus</a></li>                                          
+                                    <li class="submenu-hover"><a href="./lapropDell.html">LapTop Dell</a></li>
+                                    <li class="submenu-hover"><a href="./Laptop Lenovo .html">LapTop Lenovo</a></li>
+                                    <li class="submenu-hover"><a href="./laptop Hp.html">LapTop Hp</a></li>
+                                    <li class="submenu-hover"><a href="./laptop msi.html">LapTop Msi</a></li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <!-- cart -->
+                        <button id="cart">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i> Giỏ Hàng </button>
+                    </ul>
+                </div>
+                <!-- cart -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản
+                                    Phẩm</span>
+                                <span class="cart-price cart-header
+                                    cart-column">Giá</span>
+                                <span class="cart-quantity cart-header
+                                    cart-column">Số Lượng</span>
+                            </div>
+                            <div class="cart-items">
+
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="row">Thông Tin Đơn Hàng</div>
+                            <div class="row-b mb-3">
+                                <div class="col-md-6">
+                                    <label>Họ tên của quý khách</label><br>
+                                    <input  type="text" name="hoten">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Email của quý khách</label><br>
+                                    <input  type="text" name="email" type="email" >
+                                </div>
+                            </div>
+                            <div class="row-b mb-3">
+                                <div class="col-md-6">
+                                    <label>Địa chỉ giao hàng</label><br>
+                                    <input type="text" name="diachi" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Điện thoại</label><br>
+                                    <input  type="text" name="dienthoai" >
+                                </div>
+                            </div>
+                        </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- form search -->
+        <div class="search-form" id="frm-search" name="search" action="/tim">
+            <form>
+                <button type="button" id="sbutton"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <input type="text" placeholder="Bạn muốn tìm sản phẩm gì?" >
+            </form>
+        </div>
+
+        
+        <!-- banner -->
+        <section class="row banner padd20">
+            <div class="container">
+                <div class="left mr">
+                    <img src="./img tai nghe/banner.tainghe.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="banner1 mb20">
+                        <img src="./banner/giao hàng.png" alt="">
+                    </div>
+                    <div class="banner2">
+                        <img src="./banner/cảm ơn khách hàng.png" alt="">
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- Sản Phẩm -->
+        <section class="wrapper">
+            <div class="products">
+                <ul>
+                    <div class="banner-1">
+                        <div class="title-banner">
+                            <img src="./img tai nghe/tai nghe.png" alt="">
+                        </div>
+                    </div>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img tai nghe/1.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Tai nghe Bluetooth Chụp Tai Sony </h3>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">8.490.000đ</span>
+                                    <span class="sale">-20%</span>
+                                    <span class="money">6.790.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img tai nghe/2.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Tai nghe Bluetooth AirPods Pro </h3>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">6.990.000đ</span>
+                                    <span class="sale">-15%</span>
+                                    <span class="money">6.990.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img tai nghe/3.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Tai nghe Bluetooth Sony WI-1000XM2</h3>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">6.990.000₫</span>
+                                    <span class="sale">-25%</span>
+                                    <span class="money">5.240.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img tai nghe/4.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Tai nghe Bluetooth True Wireless Beats Powerbeats Pro</h3>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">5.990.000₫</span>
+                                    <span class="sale">-30%</span>
+                                    <span class="money">4.190.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img tai nghe/5.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Tai nghe Bluetooth True Wireless Samsung Galaxy Buds 2 Pro</h3>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">4.990.000đ</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">4.490.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img tai nghe/6.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Tai nghe Bluetooth True Wireless Sony
+                            </h3>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">6.490.000₫</span>
+                                    <span class="sale">-32%</span>
+                                    <span class="money">4.410.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img tai nghe/7.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Tai nghe Bluetooth True Wireless LG TONE-FP8</h3>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">5.990.000₫</span>
+                                    <span class="sale">-14%</span>
+                                    <span class="money">4.190.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img tai nghe/8.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Tai nghe Bluetooth True Wireless JBL LIVE 300</h3>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">4.900.000₫</span>
+                                    <span class="sale">-10%</span>
+                                    <span class="money">3.990.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img tai nghe/9.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Tai nghe Bluetooth True Wireless Beats Studio Buds</h3>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">3.990.000đ</span>
+                                    <span class="sale">-30%</span>
+                                    <span class="money">2.790.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img tai nghe/10.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Tai nghe Bluetooth TWS Monster Mission V1</h3>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">2.400.000₫</span>
+                                    <span class="sale">-12%</span>
+                                    <span class="money">2.100.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img tai nghe/11.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Tai nghe Bluetooth True Wireless Gaming Asus Rog Cetra
+                            </h3>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">2.290.000₫</span>
+                                    <span class="sale">-12%</span>
+                                    <span class="money">1.945.000₫</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="./img tai nghe/12.png"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3"><span>[Mới 100%]</span>
+                                Tai nghe Bluetooth True Wireless JBL Tune 220</h3>
+                            
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="old-price">2.890.000₫</span>
+                                    <span class="sale">-50%</span>
+                                    <span class="money">1.445.000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm
+                                    Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <!----------------Hotline----------------->
+        <div class="hotline">
+            <div class="call call_zalo">
+                <div class="hotline-phone-ring">
+                    <div class="hotline-phone-ring-circle"></div>
+                    <div class="hotline-phone-ring-circle-fill"></div>
+                    <div class="hotline-phone-ring-img-circle"> 
+                        <a href="http://zalo.me/0383684321" class="">
+                            <img src="https://fastcare.vn/assets/images/zalo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>       
+            <div class="call call_phone">
+                <div class="hotline-phone-ring">
+                    <div class="hotline-phone-ring-circle"></div>
+                    <div class="hotline-phone-ring-circle-fill"></div>
+                    <div class="hotline-phone-ring-img-circle"> 
+                        <a href="tel:0383684321" class="">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------Back-top----------------->
+        <div id="backtop">
+            <i class="fa-solid fa-chevron-up"></i>
+
+        </div>
+
+        <script src="script.js"></script>
+
+
+        <!----------------footer---------------->
+        <!----------------footer----------------->
+        <footer class="footer">
+            <div class="footer-left">
+                <h3>Nguyễn Danh<span>Phóng</span></h3>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Văn Khê</span> Hà Đông</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>0383684321</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="">danhphong200412@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing
+                    elit. Fusce euismod convallis velit, eu auctor lacus
+                    vehicula sit amet.
+                </p>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100049137288608"><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-github"></i></a>
+
+                </div>
+            </div>
+            
+        </footer>
+        
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+  $(window).scroll(function(){
+    if ($(this).scrollTop()) {
+      $('#backtop').fadeIn();
+    } else {
+      $('#backtop').fadeOut();
+    }
+  });
+  $("#backtop").click(function(){
+    $('html, body').animate({
+      scrollTop: 0 
+    }, 500);
+  });
+});
+    </script>
+</html>

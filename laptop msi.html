@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Giới thiệu về laptop Msi</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f726daf95a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">     
+    </head>
+    <body>
+        <style>
+.menu {
+    max-width: 1400px;
+    margin:  auto;
+    margin-top: 20px;
+}           
+.menu-bar h1{
+  font-size: 30px;
+  text-align: center;
+  margin-right: 16px;
+  margin-left: 25px;
+}
+.menu-slide h3 {
+    font-size: 25px;
+    margin-right: 16px;
+    margin-left: 25px;
+}
+
+.menu-slide p {
+   font-size: 20px;
+   margin-right: 16px;
+    margin-left: 25px;
+}   
+.menu-slide img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     width: 800px;
+}
+/* Menu */
+.box-menu{ 
+  background-color: #09993e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6%;
+}
+
+.logo {
+  color: white;
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.box-menu ul{ 
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.box-menu ul li{ 
+  width: 170px;
+  margin: 5px;
+  padding: 15px;
+}
+
+.box-menu ul li a{ 
+  color: #fff;
+  text-decoration: none;
+  
+}
+.active,.box-menu ul li:hover{ 
+  border-radius: 3px;
+  z-index: 999;
+}
+.box-menu .fa{ 
+  margin-right: 5px;
+}
+
+.box-submenu{
+   display: none;
+   transition: 0.5s ease-in-out;
+}
+.box-menu ul li:hover .box-submenu{
+  display: block;
+  position: absolute;
+  background: #13ac13;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.box-menu ul li:hover .box-submenu ul{
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.box-menu ul li:hover .box-submenu ul li{
+  width: 220px;
+  text-align: left;
+  border-bottom: dotted 1px #fff;
+  background: transparent;
+  border-radius: 0;
+  padding: 15px;
+  margin: 10px;
+  
+}
+.box-menu ul li:hover .box-submenu ul li:last-child{
+  border-bottom: none;
+}
+.box-menu ul li:hover .box-submenu ul li a:hover{
+  color: rgb(177, 20, 20);
+}
+.fa-angle-right{
+  float: right;
+}
+.box-submenu-2{
+  display: none;
+}
+
+.submenu-hover:hover .box-submenu-2{
+  display: block;
+  position: absolute;
+  margin-top: -44px;
+  margin-left: 210px;
+  background: #bebe07;
+ 
+}
+
+/************** footer ************************/
+.footer{
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 20px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer h3 span{
+  color:  lightseagreen;
+}
+
+/* Footer Center */
+.footer .footer-center{
+  width: 35%;
+}
+.footer .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+.footer-company-name {
+  align-items: center;
+  text-align: center;
+  background-color: #09993e;
+  color:  #fff;
+}
+/* Footer Right */
+
+.footer .footer-right{
+  width: 20%;
+}
+
+.footer .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .footer-icons{
+  margin-top: 25px;
+}
+
+.footer .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+.footer .footer-icons a:hover{
+  background-color: #0275d8;
+  transition: 0.5s;
+}
+/* mobile */
+
+@media (max-width: 880px) {
+
+  .footer{
+    font: bold 14px sans-serif;
+  }
+
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+
+           
+    </style>
+
+     <!-- header -->
+          <!-- header -->
+        <header>
+          <nav>
+              <div class="box-menu">
+                  <h4 class="logo"><img src="./banner/logoo.png" alt=""></h4>
+                  <ul>
+                      
+                      <li class="active" ><a href="./index.html"><i class="fa fa-home"aria-hidden="true"></i> Trang chủ</a></li>    
+                      <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Sản Phẩm <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                          <div class="box-submenu">
+                              <ul>
+                                  <li class="submenu-hover"><a href=""> LapTop </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                      <div class="box-submenu-2">
+                                          <ul>
+                                              <li><a href="./LaptopGaming.html">LapTop Gaming</a></li>
+                                              <li><a href="./laptophoctap.html">LapTop Học Tập & Văn Phòng</a></li>
+                                              <li><a href="./laptopdohoa.html">LapTop Đồ Họa</a></li>
+                                              
+                                          </ul>
+                                      </div>
+                                  </li>
+                                  <li class="submenu-hover"><a href="">Phụ kiện </a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                      <div class="box-submenu-3">
+                                          <ul>
+                                              <li><a href="./laptop ban phim.html">Bàn phím & Chuột</a></li>
+                                              <li><a href="./loa.html">Loa</a></li>
+                                              <li><a href="./tai nghe.html">Tai Nghe</a></li>
+                                              <li><a href="./USB.html">USB</a></li>
+                                              <li><a href="./phanmem.html">Phần Mềm</a></li>
+                                          </ul>
+                                      </div>
+                                  </li>
+                                  <li><a href="./maytinhpc.html">Màn Hình Máy Tính Pc</a></li>
+                                  <li><a href="./dongho.html">Đồng Hồ Cao Cấp</a></li>
+                                  <li><a href="">Sạc Dự Phòng</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li>
+                          <a href=""><i class="fa fa-clone" aria-hidden="true"></i> Giới thiệu <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                          <div class="box-submenu">
+                              <ul>
+                                  <li class="submenu-hover"><a href="./laptop Macbook.html">LapTop Macbook</a></li>
+                                  <li class="submenu-hover"><a href="./Laptop Acer.html">LapTop Acer</a></li>                                           
+                                  <li class="submenu-hover"><a href="./Laptop Asus.html">LapTop Asus</a></li>                                          
+                                  <li class="submenu-hover"><a href="./lapropDell.html">LapTop Dell</a></li>
+                                  <li class="submenu-hover"><a href="./Laptop Lenovo .html">LapTop Lenovo</a></li>
+                                  <li class="submenu-hover"><a href="./laptop Hp.html">LapTop Hp</a></li>
+                                  <li class="submenu-hover"><a href="./laptop msi.html">LapTop Msi</a></li>
+                              </ul>
+
+                          </div>
+                      </li>
+                      <!-- cart -->
+                      <button id="cart">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i> Giỏ Hàng </button>
+                  </ul>
+              </div>
+              <!-- cart -->
+              <div id="myModal" class="modal">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title">Giỏ Hàng</h5>
+                          <span class="close">&times;</span>
+                      </div>
+                      <div class="modal-body">
+                          <div class="cart-row">
+                              <span class="cart-item cart-header cart-column">Sản
+                                  Phẩm</span>
+                              <span class="cart-price cart-header
+                                  cart-column">Giá</span>
+                              <span class="cart-quantity cart-header
+                                  cart-column">Số Lượng</span>
+                          </div>
+                          <div class="cart-items">
+
+                          </div>
+                          <div class="cart-total">
+                              <strong class="cart-total-title">Tổng Cộng:</strong>
+                              <span class="cart-total-price">0VNĐ</span>
+                          </div>
+                      </div>
+                      <form>
+                          <div class="row">Thông Tin Đơn Hàng</div>
+                          <div class="row-b mb-3">
+                              <div class="col-md-6">
+                                  <label>Họ tên của quý khách</label><br>
+                                  <input  type="text" name="hoten">
+                              </div>
+                              <div class="col-md-6">
+                                  <label>Email của quý khách</label><br>
+                                  <input  type="text" name="email" type="email" >
+                              </div>
+                          </div>
+                          <div class="row-b mb-3">
+                              <div class="col-md-6">
+                                  <label>Địa chỉ giao hàng</label><br>
+                                  <input type="text" name="diachi" >
+                              </div>
+                              <div class="col-md-6">
+                                  <label>Điện thoại</label><br>
+                                  <input  type="text" name="dienthoai" >
+                              </div>
+                          </div>
+                      </form>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                          <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+      </header>
+      <!-- form search -->
+      <div class="search-form" id="frm-search" name="search" action="/tim">
+          <form>
+              <button type="button" id="sbutton"><i class="fa fa-search" aria-hidden="true"></i></button>
+              <input type="text" placeholder="Bạn muốn tìm sản phẩm gì?" >
+          </form>
+      </div>
+
+
+    <!-- giới thiệu sản phẩm -->
+    <div class="menu">
+        <div class="menu-bar">
+            <h1>Giới thiệu về thương hiệu Laptop Msi</h1>
+        </div>
+        <div class="menu-slide">
+            <h3>Laptop MSI của nước nào?</h3>
+            <p>MSI là từ viết tắt của Micro-Star International. Đây là công ty
+                đa quốc gia chuyên về lĩnh vực công nghệ có trụ sở chính ở Tân
+                Bắc, Đài Loan. Công ty được thành lập từ năm 1986. Tính đến nay,
+                sau 35 năm thành lập, công ty đã nổi tiếng trên toàn thế giới
+                với các sản phẩm phần cứng bao gồm: card màn hình, laptop chơi
+                game, bo mạch chủ, máy chủ, .…</p>
+            <img src="https://hc.com.vn/i/ecommerce/media/ckeditor_3363039.jpg"
+                alt="">
+            <p>Năm 2015, laptop của MSI còn được đánh giá hạng 4 trong top những
+                hãng laptop chất lượng nhất thế giới. Đánh giá đó dựa vào rất
+                nhiều yếu tố như thiết kế, chất lượng sản phẩm, dịch vụ hỗ trợ,
+                phần mềm, .… Những chiếc laptop MSI được làm ra tại các nhà máy
+                ở Đài Loan với quy trình sản xuất hiện đại nhất.</p>
+            <h3>Laptop MSI có tốt không?</h3>
+            <p>Sau đây là những đánh giá <b>laptop Msi</b> ngay từ những người
+                đã sử dụng nó và chia sẻ như sau được chúng tôi đã tổng hợp lại:</p>
+            <img src="https://hc.com.vn/i/ecommerce/media/ckeditor_3363042.jpg"
+                alt="">
+            <p><b>- Nói về thiết kế:</b> Laptop MSI với vẻ bên ngoài chắc chắn,
+                khoẻ khoắn và đầy nam tính, khá cuốn hút trong mắt các game thủ
+                với ngoại hình bên ngoài laptop MSI ở mọi góc độ.</p>
+            <p><b>- Nói về tính năng:</b> Laptop MSI được trang bị card đồ họa
+                rời cao, giúp cho người dùng khi sử dụng máy không bị giật, lag
+                khi chơi game. Khi dùng card đồ hoạ rời, laptop MSI cũng có thể
+                được sử dụng để thiết kế đồ họa hay sử dụng cho các kiến trúc
+                sư.</p>
+            <p><b>- Nói về độ bền: </b> Nhắc đến <mark> laptop MSI</mark> người
+                ta không thể bỏ quên tính năng sử pin miễn chê, thời gian sử
+                dụng pin lên tới mười tiếng đồng hồ giúp cho những người đang
+                chơi game không bị lỡ mất hiệp chơi.</p>
+            <p><b>- Về bảo hành:</b> Dịch vụ bảo hành laptop MSI có thể nói khá
+                tốt khi bảo hành máy lên đến 2 năm, ít nhất là 12 tháng. Hiện
+                nay, chỉ có laptop ASUS và MSI có chính sách bảo hành máy lên
+                đến 2 năm.</p>
+            <h3>Những chiếc máy tính MSI tốt nhất hiện nay</h3>
+            <p>MSI là một thương hiệu laptop/ máy tính xách tay nổi tiếng và
+                được nhiều người yêu thích công nghệ tin dùng. Laptop MSI luôn
+                nổi bật bởi cấu hình mạnh mẽ, thiết kế ấn tượng cùng hệ thống
+                quạt tản tối ưu cho việc chơi game hay những tác vụ nặng. Ở bài
+                viết dưới đây, Laptop88 sẽ giới thiệu cho bạn những chiếc <b>máy
+                    tính MSI tốt nhất hiện nay.</b></p>
+            <img src="https://laptop88.vn/media/news/2206_DSC06284-min.jpg"
+                alt="">
+            <h3>Thương hiệu máy tính MSI</h3>
+            <p>MSI là một công ty công nghệ đa quốc gia có trụ sở chính tại Đài
+                Loan. Là một trong những ông lớn trên thị trường, hãng MSI nổi
+                tiếng với những dòng sản phẩm phần cứng như: bo mạch chủ, card
+                màn hình, PC, laptop,... và đã được nằm trong top 4 những thương
+                hiệu laptop chất lượng nhất thế giới (2015).</p>
+            <p>Khi mới bắt đầu ra mắt những sản phẩm laptop, đối tượng hướng đến
+                chủ yếu của MSI là những người làm công việc sáng tạo, thiết kế
+                đồ họa hoặc những game thủ với niềm đam mê lớn với game. Chính
+                vì vậy, mà thiết kế của những chiếc <b>máy tính MSI</b> được tối
+                ưu cho gamer và creator. Những năm gần đây, ngoài những dòng
+                laptop gaming đình đám quen thuộc như MSI Bravo, MSI GF63,...
+                thì MSI cũng đã cho ra đời dòng máy văn phòng cấu hình khỏe để
+                đáp ứng nhu cầu của người dùng đa nhiệm hiện nay như MSI Modern.</p>
+            <h3>Đặc điểm nổi bật của những chiếc máy tính MSI</h3>
+            <h3>1.Thiết kế hầm hố, cá tính</h3>
+            <p><b>Máy tính MSI</b> chủ yếu hướng đến phân khúc khách hàng là
+                game thủ và dân đồ họa nên có thiết kế cực mạnh mẽ, cá tính cùng
+                độ hoàn thiện cao. Hai tông màu chủ đạo thường thấy sẽ là đỏ và
+                đen kết hợp cùng logo MSI tạo nên vẻ ngoài bắt mắt. Hơn nữa,
+                những đường cắt táo bạo quen thuộc cũng là thiết kế tạo nên
+                thương hiệu MSI. Build máy cứng cáp, vỏ máy chắc chắn cùng khả
+                năng chống sốc và chống va đập tốt mang đến sự bền bỉ cho chiếc
+                laptop MSI.</p>
+            <p>Trong lượng của <b>máy tính MSI </b> tương đối vừa phải, không
+                quá gọn nhẹ nhưng vẫn có thể dễ dàng di mang theo khi di chuyển.
+                Trọng lượng nhẹ nhất là những dòng laptop văn phòng khoảng 1.6-
+                2kg cho đến những con máy cấu hình khủng cho dân đồ họa chuyên
+                nghiệp sẽ khoảng 2- 2.6kg.</p>
+            <p>Đặc biệt, <b>máy tính MSI </b> được trang bị bàn phím Led nhằm
+                tối ưu cho trải nghiệm của người dùng. Bạn có thể làm việc hiệu
+                quả, chơi game thoải mái dù ở điều kiện ánh sáng yếu nhất.</p>
+            <h3>2.Cấu hình, hiệu suất mạnh mẽ</h3>
+            <p><b>Máy tính MSI</b> được trang bị dải cấu hình đa dạng nhằm đáp
+                ứng nhu cầu của người dùng hiện nay. Bên cạnh đó, laptop còn
+                được kết hợp với card đồ hoạ rời cho phép máy chơi game mạnh mẽ
+                cùng với việc thỏa sức sáng tạo thiết kế, chỉnh sửa hình ảnh,
+                video đạt chất lượng cao.</p>
+            <p>Hầu hết các mẫu laptop thương hiệu MSI đều có bộ nhớ RAM ít nhất
+                là 8GB chuẩn DDR4 2 khe (1 khe 8 GB + 1 khe rời) giúp máy nâng
+                cao năng suất xử lý công việc và không có hiện tượng giật lag.</p>
+            <p>Ổ cứng được trang bị là SSD với dung lượng vừa đủ mang lại những
+                trải nghiệm mượt mà, tốc độ phản hồi nhanh chóng và rút ngắn
+                thời gian khởi động máy. Ngoài ra, nếu bạn có nhu cầu nâng cấp
+                không gian lưu trữ sau này thì cũng có thể tháo lắp thanh khác
+                lên đến 2TB.</p>
+            <h3>3.Tản nhiệt tối ưu</h3>
+            <p><b>Máy tính MSI</b> được trang bị hệ thống tản nhiệt Cooler Boost
+                5 giúp làm mát máy tối ưu. Bạn có thể yên tâm làm việc cả ngày
+                dài hay chơi game liên tục trong nhiều giờ mà nhiệt độ máy luôn
+                được giữ ổn định để duy trì tốt hiệu năng của máy.</p>
+
+        </div>
+    </div>
+        <!----------------footer----------------->
+        <!----------------footer----------------->
+        <footer class="footer">
+          <div class="footer-left">
+              <h3>Nguyễn Danh<span>Phóng</span></h3>
+          </div>
+          <div class="footer-center">
+              <div>
+                  <i class="fa fa-map-marker"></i>
+                  <p><span>Văn Khê</span> Hà Đông</p>
+              </div>
+              <div>
+                  <i class="fa fa-phone"></i>
+                  <p>0383684321</p>
+              </div>
+              <div>
+                  <i class="fa fa-envelope"></i>
+                  <p><a href="">danhphong200412@gmail.com</a></p>
+              </div>
+          </div>
+          <div class="footer-right">
+              <p class="footer-company-about">
+                  <span>About the company</span>
+                  Lorem ipsum dolor sit amet, consectateur adispicing
+                  elit. Fusce euismod convallis velit, eu auctor lacus
+                  vehicula sit amet.
+              </p>
+              <div class="footer-icons">
+                  <a href="https://www.facebook.com/profile.php?id=100049137288608"><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                  <a href=""><i class="fa fa-github"></i></a>
+
+              </div>
+          </div>
+          
+      </footer>
+      <!----------------Back-top----------------->
+      <div id="backtop">
+        <i class="fa-solid fa-chevron-up"></i>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.js"integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+    $(window).scroll(function(){
+        if ($(this).scrollTop()) {
+        $('#backtop').fadeIn();
+        } else {
+        $('#backtop').fadeOut();
+        }
+    });
+    $("#backtop").click(function(){
+        $('html, body').animate({
+        scrollTop: 0 
+        }, 500);
+    });
+    });
+</script>
+</html>
